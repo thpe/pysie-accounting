@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pysie-accounting",
+    name="pysie_accounting",
     version="0.0.1",
     author="Thomas Petig",
     author_email="thomas@petig.eu",
