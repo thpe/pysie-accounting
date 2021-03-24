@@ -43,13 +43,13 @@ class PySIE:
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': m.group(3)}
+                       'Balance': float(m.group(3))}
                 dfub = dfub.append(row, ignore_index=True)
             m = re_res.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': m.group(3)}
+                       'Balance': float(m.group(3))}
                 dfres = dfres.append(row, ignore_index=True)
 
         # df1 = df1.set_index('Konto')
@@ -64,6 +64,8 @@ class PySIE:
         dfub = dfub.merge(right=df, on=['Konto'])
         dfub = dfub.merge(right=self.dftrans, on=['SRU'])
         print(dfub)
+        self.dfub = dfub
         dfres = dfres.merge(right=df, on=['Konto'])
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
         print(dfres)
+        self.dfres = dfres
