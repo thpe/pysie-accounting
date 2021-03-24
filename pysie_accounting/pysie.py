@@ -35,17 +35,17 @@ class PySIE:
             if m:
                 row = {'Konto': int(m.group(1)), 'SRU': int(m.group(2))}
                 df1 = df1.append(row, ignore_index=True)
-            m = re_name.search(l)
+            m = re_name.search(r)
             if m:
                 row = {'Konto': int(m.group(1)), 'Name': m.group(2)}
                 df2 = df2.append(row, ignore_index=True)
-            m = re_ub.search(l)
+            m = re_ub.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
                        'Balance': m.group(3)}
                 dfub = dfub.append(row, ignore_index=True)
-            m = re_res.search(l)
+            m = re_res.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
