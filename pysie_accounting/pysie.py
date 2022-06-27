@@ -33,24 +33,26 @@ class PySIE:
         for r in self.lines:
             m = re_sru.search(r)
             if m:
-                row = {'Konto': int(m.group(1)), 'SRU': int(m.group(2))}
-                df1 = df1.append(row, ignore_index=True)
+                row = pd.DataFrame({'Konto': int(m.group(1)), 'SRU': int(m.group(2))}, index=[0])
+                df1 = pd.concat([df1, row], ignore_index=True)
             m = re_name.search(r)
             if m:
-                row = {'Konto': int(m.group(1)), 'Name': m.group(2)}
-                df2 = df2.append(row, ignore_index=True)
+                row = pd.DataFrame({'Konto': int(m.group(1)), 'Name': m.group(2)}, index=[0])
+                df2 = pd.concat([df2, row], ignore_index=True)
             m = re_ub.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
                        'Balance': float(m.group(3))}
-                dfub = dfub.append(row, ignore_index=True)
+                row = pd.DataFrame(row, index=[0])
+                dfub = pd.concat([dfub, row], ignore_index=True)
             m = re_res.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
                        'Balance': float(m.group(3))}
-                dfres = dfres.append(row, ignore_index=True)
+                row = pd.DataFrame(row, index=[0])
+                dfres = pd.concat([dfres, row], ignore_index=True)
 
         # df1 = df1.set_index('Konto')
         # df2 = df2.set_index('Konto')
