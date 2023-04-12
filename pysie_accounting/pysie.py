@@ -43,14 +43,14 @@ class PySIE:
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': float(m.group(3))}
+                       'Balance': np.float(m.group(3))}
                 row = pd.DataFrame(row, index=[0])
                 dfub = pd.concat([dfub, row], ignore_index=True)
             m = re_res.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': float(m.group(3))}
+                       'Balance': np.float(m.group(3))}
                 row = pd.DataFrame(row, index=[0])
                 dfres = pd.concat([dfres, row], ignore_index=True)
 
@@ -59,8 +59,8 @@ class PySIE:
 
         df = df1.merge(df2)
         df = df.convert_dtypes()
-        dfub = dfub.convert_dtypes()
-        dfres = dfres.convert_dtypes()
+#        dfub = dfub.convert_dtypes()
+#        dfres = dfres.convert_dtypes()
         df = df.set_index('Konto')
         print(df)
         dfub = dfub.merge(right=df, on=['Konto'])
