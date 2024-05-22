@@ -41,12 +41,22 @@ class PySIE:
             y = r.Year
             k = r.Konto
             b = r.Balance
-            f.write(f'#UB {y} {k} {b}\n')
+            f.write(f'#UB {y} {k} {b:.2f}\n')
         for r in self.dfres.itertuples():
             y = r.Year
             k = r.Konto
             b = r.Balance
-            f.write(f'#RES {y} {k} {b}\n')
+            f.write(f'#RES {y} {k} {b:.2f}\n')
+        for k,v in self.verifikat.items():
+            f.write(f'#VER "V" "{k}" {v[0]} {v[1]} {v[2]}\n')
+            f.write('{\n')
+            for l in v[3]:
+                f.write(f'\t#TRANS {l[0]} ')
+                f.write('{')
+                f.write(f'{l[1]}')
+                f.write('}')
+                f.write(f' {float(l[2]):.2f}\n')
+            f.write('}\n')
         f.close()
 
     def open_trans(self, filename):
@@ -69,40 +79,69 @@ class PySIE:
         re_name = re.compile(r'#KONTO (\d+) "(.*)"')
         re_ub   = re.compile(r'#UB (-?\d+) (\d+) (-?\d+\.\d+)')
         re_res  = re.compile(r'#RES (-?\d+) (\d+) (-?\d+\.\d+)')
+        re_verif  = re.compile(r'#VER "(.*)" "(\d+)" (\d+) "(.*)" (\d+)')
+        re_trans  = re.compile(r'#TRANS (\d+) {(.*)} (-?\d+.?\d*)')
 
         df1   = pd.DataFrame(columns=['Konto', 'SRU'])
         df2   = pd.DataFrame(columns=['Konto', 'Name'])
         dfub  = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
         dfres = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
+        self.verifikat = {}
+        state_trans = False
+        vnr = 0
         for r in self.lines:
-            m = re_orgnr.search(r)
-            if m:
-                self.orgnr = m.group(1)
-            m = re_fnamn.search(r)
-            if m:
-                self.fnamn = m.group(1)
-            m = re_sru.search(r)
-            if m:
-                row = pd.DataFrame({'Konto': int(m.group(1)), 'SRU': int(m.group(2))}, index=[0])
-                df1 = pd.concat([df1, row], ignore_index=True)
-            m = re_name.search(r)
-            if m:
-                row = pd.DataFrame({'Konto': int(m.group(1)), 'Name': m.group(2)}, index=[0])
-                df2 = pd.concat([df2, row], ignore_index=True)
-            m = re_ub.search(r)
-            if m:
-                row = {'Year': m.group(1),
-                       'Konto': int(m.group(2)),
-                       'Balance': float(m.group(3))}
-                row = pd.DataFrame(row, index=[0])
-                dfub = pd.concat([dfub, row], ignore_index=True)
-            m = re_res.search(r)
-            if m:
-                row = {'Year': m.group(1),
-                       'Konto': int(m.group(2)),
-                       'Balance': float(m.group(3))}
-                row = pd.DataFrame(row, index=[0])
-                dfres = pd.concat([dfres, row], ignore_index=True)
+            if not state_trans:
+                m = re_orgnr.search(r)
+                if m:
+                    self.orgnr = m.group(1)
+                m = re_fnamn.search(r)
+                if m:
+                    self.fnamn = m.group(1)
+                m = re_sru.search(r)
+                if m:
+                    row = pd.DataFrame({'Konto': int(m.group(1)), 'SRU': int(m.group(2))}, index=[0])
+                    df1 = pd.concat([df1, row], ignore_index=True)
+                m = re_name.search(r)
+                if m:
+                    row = pd.DataFrame({'Konto': int(m.group(1)), 'Name': m.group(2)}, index=[0])
+                    df2 = pd.concat([df2, row], ignore_index=True)
+                m = re_ub.search(r)
+                if m:
+                    row = {'Year': m.group(1),
+                           'Konto': int(m.group(2)),
+                           'Balance': float(m.group(3))}
+                    row = pd.DataFrame(row, index=[0])
+                    dfub = pd.concat([dfub, row], ignore_index=True)
+                m = re_res.search(r)
+                if m:
+                    row = {'Year': m.group(1),
+                           'Konto': int(m.group(2)),
+                           'Balance': float(m.group(3))}
+                    row = pd.DataFrame(row, index=[0])
+                    dfres = pd.concat([dfres, row], ignore_index=True)
+                m = re_verif.search(r)
+                if m:
+                    ser = m.group(1)
+                    nr = m.group(2)
+                    d = m.group(3)
+                    text = m.group(4)
+                    d1 = m.group(5)
+
+                    self.verifikat[nr] = (d, text, d1, [])
+                    vnr = nr
+                    state_trans = True
+            else:
+                if r[0] == '}':
+                    state_trans = False
+                    continue
+                m = re_trans.search(r)
+                if m:
+                    k = m.group(1)
+                    l = m.group(2)
+                    a = m.group(3)
+                    self.verifikat[nr][3].append((k,l,a))
+
+
 
         # df1 = df1.set_index('Konto')
         # df2 = df2.set_index('Konto')
@@ -123,3 +162,4 @@ class PySIE:
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
         print(dfres)
         self.dfres = dfres
+        print(self.verifikat)
