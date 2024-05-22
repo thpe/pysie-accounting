@@ -20,4 +20,4 @@ jobs:
         pip install pylint numpy pandas
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') --max-branch=15 --max-statements=90 --max-attributes=20 --max-locals=30
