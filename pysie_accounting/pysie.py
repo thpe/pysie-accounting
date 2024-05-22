@@ -9,7 +9,7 @@ class PySIE:
         self.lines = []
 
     def open_trans(self, filename):
-        self.dftrans = pd.read_csv(filename, dtype={'SRU': np.int,
+        self.dftrans = pd.read_csv(filename, dtype={'SRU': int,
                                                     'Ink2': str})
         self.dftrans = self.dftrans[['SRU', 'Ink2']]
         print(self.dftrans)
@@ -43,14 +43,14 @@ class PySIE:
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': np.float(m.group(3))}
+                       'Balance': float(m.group(3))}
                 row = pd.DataFrame(row, index=[0])
                 dfub = pd.concat([dfub, row], ignore_index=True)
             m = re_res.search(r)
             if m:
                 row = {'Year': m.group(1),
                        'Konto': int(m.group(2)),
-                       'Balance': np.float(m.group(3))}
+                       'Balance': float(m.group(3))}
                 row = pd.DataFrame(row, index=[0])
                 dfres = pd.concat([dfres, row], ignore_index=True)
 
