@@ -25,12 +25,14 @@ class PySIE:
         self.dfub = None
         self.dfres = None
         self.verifikat = None
+        self.sie_encoding = 'utf8'#"CP437"
+#        self.sie_encoding = 'CP437'
         #self.gen = f'{datetime.now():%Y%m%d}u'
 
         self.kontoplan = 'BAS2014'
     def write_sie4(self, fname):
         """ writing a SIE4 file with the class content """
-        with open(fname, 'w', encoding='utf8') as fil:
+        with open(fname, 'w', encoding=self.sie_encoding) as fil:
             fil.write(f'#FLAGGA {self.flagga}\n')
             fil.write(f'#PROGRAM {self.program}\n')
             fil.write(f'#FORMAT {self.format}\n')
@@ -80,7 +82,7 @@ class PySIE:
         """ open and load SIE4 file """
         self.filename = filename
 
-        with open(self.filename, encoding='utf8') as fil:
+        with open(self.filename, encoding=self.sie_encoding) as fil:
             for row in fil:
                 self.lines.append(row)
 
@@ -110,28 +112,28 @@ class PySIE:
                     self.fnamn = rematch.group(1)
                 rematch = re_sru.search(row)
                 if rematch:
-                    row = pd.DataFrame({'Konto': int(rematch.group(1)),
+                    dfrow = pd.DataFrame({'Konto': int(rematch.group(1)),
                                         'SRU': int(rematch.group(2))}, index=[0])
-                    df1 = pd.concat([df1, row], ignore_index=True)
+                    df1 = pd.concat([df1, dfrow], ignore_index=True)
                 rematch = re_name.search(row)
                 if rematch:
-                    row = pd.DataFrame({'Konto': int(rematch.group(1)),
+                    dfrow = pd.DataFrame({'Konto': int(rematch.group(1)),
                                         'Name': rematch.group(2)}, index=[0])
-                    df2 = pd.concat([df2, row], ignore_index=True)
+                    df2 = pd.concat([df2, dfrow], ignore_index=True)
                 rematch = re_ub.search(row)
                 if rematch:
-                    row = {'Year': rematch.group(1),
+                    dfrow = {'Year': rematch.group(1),
                            'Konto': int(rematch.group(2)),
                            'Balance': float(rematch.group(3))}
-                    row = pd.DataFrame(row, index=[0])
-                    dfub = pd.concat([dfub, row], ignore_index=True)
+                    dfrow = pd.DataFrame(dfrow, index=[0])
+                    dfub = pd.concat([dfub, dfrow], ignore_index=True)
                 rematch = re_res.search(row)
                 if rematch:
-                    row = {'Year': rematch.group(1),
+                    dfrow = {'Year': rematch.group(1),
                            'Konto': int(rematch.group(2)),
                            'Balance': float(rematch.group(3))}
-                    row = pd.DataFrame(row, index=[0])
-                    dfres = pd.concat([dfres, row], ignore_index=True)
+                    dfrow = pd.DataFrame(dfrow, index=[0])
+                    dfres = pd.concat([dfres, dfrow], ignore_index=True)
                 rematch = re_verif.search(row)
                 if rematch:
                     #ser = rematch.group(1)
