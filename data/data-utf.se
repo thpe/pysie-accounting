@@ -1,0 +1,2470 @@
+#FLAGGA 0
+#PROGRAM "test" 1.0
+#FORMAT PC8
+#GEN 20210101
+#SIETYP 4
+#ORGNR 1234567890
+#FNAMN "Test AB"
+#RAR 0 20200508 20201231
+#KPTYP BAS2014
+#KONTO 1010 "Utvecklingsutgifter"
+#SRU 1010 7201
+#KONTO 1011 "Balanserade utgifter för forskning och utveckling"
+#SRU 1011 7201
+#KONTO 1012 "Balanserade utgifter för programvaror"
+#SRU 1012 7201
+#KONTO 1018 "Ackumulerade nedskrivningar på balanserade utgifter"
+#SRU 1018 7201
+#KONTO 1019 "Ackumulerade avskrivningar på balanserade utgifter"
+#SRU 1019 7201
+#KONTO 1020 "Koncessioner m.m."
+#SRU 1020 7201
+#KONTO 1028 "Ackumulerade nedskrivningar på koncessioner m.m."
+#SRU 1028 7201
+#KONTO 1029 "Ackumulerade avskrivningar på koncessioner m.m."
+#SRU 1029 7201
+#KONTO 1030 "Patent"
+#SRU 1030 7201
+#KONTO 1038 "Ackumulerade nedskrivningar på patent"
+#SRU 1038 7201
+#KONTO 1039 "Ackumulerade avskrivningar på patent"
+#SRU 1039 7201
+#KONTO 1040 "Licenser"
+#SRU 1040 7201
+#KONTO 1048 "Ackumulerade nedskrivningar på licenser"
+#SRU 1048 7201
+#KONTO 1049 "Ackumulerade avskrivningar på licenser"
+#SRU 1049 7201
+#KONTO 1050 "Varumärken"
+#SRU 1050 7201
+#KONTO 1058 "Ackumulerade nedskrivningar på varumärken"
+#SRU 1058 7201
+#KONTO 1059 "Ackumulerade avskrivningar på varumärken"
+#SRU 1059 7201
+#KONTO 1060 "Hyresrätter, tomträtter och liknande"
+#SRU 1060 7201
+#KONTO 1068 "Ackumulerade nedskrivningar på hyresrätter, tomträtter och liknande"
+#SRU 1068 7201
+#KONTO 1069 "Ackumulerade avskrivningar på hyresrätter, tomträtter och liknande"
+#SRU 1069 7201
+#KONTO 1070 "Goodwill"
+#SRU 1070 7201
+#KONTO 1078 "Ackumulerade nedskrivningar på goodwill"
+#SRU 1078 7201
+#KONTO 1079 "Ackumulerade avskrivningar på goodwill"
+#SRU 1079 7201
+#KONTO 1080 "Pågående projekt och förskott för immateriella anläggningstillgångar"
+#SRU 1080 7201
+#KONTO 1081 "Pågående projekt för immateriella anläggningstillgångar"
+#SRU 1081 7201
+#KONTO 1088 "Förskott för immateriella anläggningstillgångar"
+#SRU 1088 7202
+#KONTO 1110 "Byggnader"
+#SRU 1110 7214
+#KONTO 1111 "Byggnader på egen mark"
+#SRU 1111 7214
+#KONTO 1112 "Byggnader på annans mark"
+#SRU 1112 7214
+#KONTO 1118 "Ackumulerade nedskrivningar på byggnader"
+#SRU 1118 7214
+#KONTO 1119 "Ackumulerade avskrivningar på byggnader"
+#SRU 1119 7214
+#KONTO 1120 "Förbättringsutgifter på annans fastighet"
+#SRU 1120 7216
+#KONTO 1129 "Ackumulerade avskrivningar på förbättringsutgifter på annans fastighet"
+#SRU 1129 7216
+#KONTO 1130 "Mark"
+#SRU 1130 7214
+#KONTO 1140 "Tomter och obebyggda markområden"
+#SRU 1140 7214
+#KONTO 1150 "Markanläggningar"
+#SRU 1150 7214
+#KONTO 1158 "Ackumulerade nedskrivningar på markanläggningar"
+#SRU 1158 7214
+#KONTO 1159 "Ackumulerade avskrivningar på markanläggningar"
+#SRU 1159 7214
+#KONTO 1180 "Pågående nyanläggningar och förskott för byggnader och mark"
+#SRU 1180 7217
+#KONTO 1181 "Pågående ny-, till- och ombyggnad"
+#SRU 1181 7217
+#KONTO 1188 "Förskott för byggnader och mark"
+#SRU 1188 7217
+#KONTO 1210 "Maskiner och andra tekniska anläggningar"
+#SRU 1210 7215
+#KONTO 1211 "Maskiner"
+#SRU 1211 7215
+#KONTO 1213 "Andra tekniska anläggningar"
+#SRU 1213 7215
+#KONTO 1218 "Ackumulerade nedskrivningar på maskiner och andra tekniska anläggningar"
+#SRU 1218 7215
+#KONTO 1219 "Ackumulerade avskrivningar på maskiner och andra tekniska anläggningar"
+#SRU 1219 7215
+#KONTO 1220 "Inventarier och verktyg"
+#SRU 1220 7215
+#KONTO 1221 "Inventarier"
+#SRU 1221 7215
+#KONTO 1222 "Byggnadsinventarier"
+#SRU 1222 7215
+#KONTO 1223 "Markinventarier"
+#SRU 1223 7215
+#KONTO 1225 "Verktyg"
+#SRU 1225 7215
+#KONTO 1228 "Ackumulerade nedskrivningar på inventarier och verktyg"
+#SRU 1228 7215
+#KONTO 1229 "Ackumulerade avskrivningar på inventarier och verktyg"
+#SRU 1229 7215
+#KONTO 1230 "Installationer"
+#SRU 1230 7215
+#KONTO 1231 "Installationer på egen fastighet"
+#SRU 1231 7215
+#KONTO 1232 "Installationer på annans fastig het"
+#SRU 1232 7215
+#KONTO 1238 "Ackumulerade nedskrivningar på installationer"
+#SRU 1238 7215
+#KONTO 1239 "Ackumulerade avskrivningar på installationer"
+#SRU 1239 7215
+#KONTO 1240 "Bilar och andra transportmedel"
+#SRU 1240 7215
+#KONTO 1241 "Personbilar"
+#SRU 1241 7215
+#KONTO 1242 "Lastbilar"
+#SRU 1242 7215
+#KONTO 1243 "Truckar"
+#SRU 1243 7215
+#KONTO 1244 "Arbetsmaskiner"
+#SRU 1244 7215
+#KONTO 1245 "Traktorer"
+#SRU 1245 7215
+#KONTO 1246 "Motorcyklar, mopeder och skotrar"
+#SRU 1246 7215
+#KONTO 1247 "Båtar, flygplan och helikoptrar"
+#SRU 1247 7215
+#KONTO 1248 "Ackumulerade nedskrivningar på bilar och andra transportmedel"
+#SRU 1248 7215
+#KONTO 1249 "Ackumulerade avskrivningar på bilar och andra transportmedel"
+#SRU 1249 7215
+#KONTO 1250 "Datorer"
+#SRU 1250 7215
+#KONTO 1251 "Datorer, företaget"
+#SRU 1251 7215
+#KONTO 1257 "Datorer, personal"
+#SRU 1257 7215
+#KONTO 1258 "Ackumulerade nedskrivningar på datorer"
+#SRU 1258 7215
+#KONTO 1259 "Ackumulerade avskrivningar på datorer"
+#SRU 1259 7215
+#KONTO 1260 "Leasade tillgångar"
+#SRU 1260 7215
+#KONTO 1269 "Ackumulerade avskrivningar på leasade tillgångar"
+#SRU 1269 7215
+#KONTO 1280 "Pågående nyanläggningar och förskott för maskiner och inventarier"
+#SRU 1280 7217
+#KONTO 1281 "Pågående nyanläggningar, maskiner och inventarier"
+#SRU 1281 7217
+#KONTO 1288 "Förskott för maskiner och inventarier"
+#SRU 1288 7217
+#KONTO 1290 "Övriga materiella anläggningstillgångar"
+#SRU 1290 7215
+#KONTO 1291 "Konst och liknande tillgångar"
+#SRU 1291 7215
+#KONTO 1292 "Djur som klassificeras som anläggningstillgång"
+#SRU 1292 7215
+#KONTO 1298 "Ackumulerade nedskrivningar på övriga materiella anläggningstillgångar"
+#SRU 1298 7215
+#KONTO 1299 "Ackumulerade avskrivningar på övriga materiella anläggningstillgångar"
+#SRU 1299 7215
+#KONTO 1310 "Andelar i koncernföretag"
+#SRU 1310 7230
+#KONTO 1311 "Aktier i noterade svenska koncernföretag"
+#SRU 1311 7230
+#KONTO 1312 "Aktier i onoterade svenska koncernföretag"
+#SRU 1312 7230
+#KONTO 1313 "Aktier i noterade utländska koncernföretag"
+#SRU 1313 7230
+#KONTO 1314 "Aktier i onoterade utländska koncernföretag"
+#SRU 1314 7230
+#KONTO 1316 "Övriga andelar i koncernföretag"
+#SRU 1316 7230
+#KONTO 1318 "Ackumulerade nedskrivningar av andelar i koncernföretag"
+#SRU 1318 7230
+#KONTO 1320 "Långfristiga fordringar hos koncernföretag"
+#SRU 1320 7232
+#KONTO 1321 "Långfristiga fordringar hos moderföretag"
+#SRU 1321 7232
+#KONTO 1322 "Långfristiga fordringar hos dotterföretag"
+#SRU 1322 7232
+#KONTO 1323 "Långfristiga fordringar hos andra koncernföretag"
+#SRU 1323 7232
+#KONTO 1328 "Ackumulerade nedskrivningar av långfristiga fordringar hos koncernföretag"
+#SRU 1328 7232
+#KONTO 1330 "Andelar i intresseföretag"
+#SRU 1330 7231
+#KONTO 1336 "Andelar i ekonomiska föreningar, intresseföretag"
+#SRU 1336 7233
+#KONTO 1338 "Ackumulerade nedskrivningar av andelar i intresseföretag"
+#SRU 1338 7231
+#KONTO 1340 "Långfristiga fordringar hos intresseföretag"
+#SRU 1340 7232
+#KONTO 1348 "Ackumulerade nedskrivningar av långfristiga fordringar hos intresseföretag"
+#SRU 1348 7232
+#KONTO 1350 "Andelar och värdepapper i andra företag"
+#SRU 1350 7233
+#KONTO 1351 "Andelar i börsnoterade företag"
+#SRU 1351 7233
+#KONTO 1352 "Andra andelar"
+#SRU 1352 7233
+#KONTO 1353 "Andelar i bostadsrättsföreningar"
+#SRU 1353 7233
+#KONTO 1354 "Obligationer"
+#SRU 1354 7233
+#KONTO 1356 "Andelar i ekonomiska föreningar, övriga företag"
+#SRU 1356 7233
+#KONTO 1358 "Ackumulerade nedskrivningar av andra andelar och värdepapper"
+#SRU 1358 7233
+#KONTO 1360 "Lån till delägare eller närstående, långfristig del"
+#SRU 1360 7234
+#KONTO 1369 "Ackumulerade nedskrivningar på lån till delägare eller närstående, långfristig del"
+#SRU 1369 7234
+#KONTO 1370 "Uppskjuten skattefordran"
+#SRU 1370 7235
+#KONTO 1380 "Andra långfristiga fordringar"
+#SRU 1380 7235
+#KONTO 1381 "Långfristiga reversfordringar"
+#SRU 1381 7235
+#KONTO 1382 "Långfristiga fordringar hos anställda"
+#SRU 1382 7235
+#KONTO 1383 "Lämnade depositioner, långfristiga"
+#SRU 1383 7235
+#KONTO 1384 "Derivat"
+#SRU 1384 7235
+#KONTO 1385 "Värde av kapitalförsäkring"
+#SRU 1385 7235
+#KONTO 1386 "Förutbetalda leasingavgifter, långfristig del"
+#SRU 1386 7235
+#KONTO 1387 "Långfristiga kontraktsfordringar"
+#SRU 1387 7235
+#KONTO 1389 "Ackumulerade nedskrivningar av andra långfristiga fordringar"
+#SRU 1389 7235
+#KONTO 1410 "Lager av råvaror"
+#SRU 1410 7241
+#KONTO 1419 "Förändring av lager av råvaror"
+#SRU 1419 7241
+#KONTO 1420 "Lager av tillsatsmaterial och förnödenheter"
+#SRU 1420 7241
+#KONTO 1429 "Förändring av lager av tillsatsmaterial och förnödenheter"
+#SRU 1429 7241
+#KONTO 1430 "Lager av halvfabrikat"
+#SRU 1430 7241
+#KONTO 1431 "Lager av köpta halvfabrikat"
+#SRU 1431 7241
+#KONTO 1432 "Lager av egentillverkade halvfabrikat"
+#SRU 1432 7242
+#KONTO 1438 "Förändring av lager av köpta halvfabrikat"
+#SRU 1438 7241
+#KONTO 1439 "Förändring av lager av egentillverkade halvfabrikat"
+#SRU 1439 7242
+#KONTO 1440 "Produkter i arbete"
+#SRU 1440 7242
+#KONTO 1449 "Förändring av produkter i arbete"
+#SRU 1449 7242
+#KONTO 1450 "Lager av färdiga varor"
+#SRU 1450 7243
+#KONTO 1459 "Förändring av lager av färdiga varor"
+#SRU 1459 7243
+#KONTO 1460 "Lager av handelsvaror"
+#SRU 1460 7243
+#KONTO 1465 "Lager av varor VMB"
+#SRU 1465 7243
+#KONTO 1466 "Nedskrivning av varor VMB"
+#SRU 1466 7243
+#KONTO 1467 "Lager av varor VMB förenklad"
+#SRU 1467 7243
+#KONTO 1469 "Förändring av lager av handelsvaror"
+#SRU 1469 7243
+#KONTO 1470 "Pågående arbeten"
+#SRU 1470 7245
+#KONTO 1471 "Pågående arbeten, nedlagda kostnader"
+#SRU 1471 7245
+#KONTO 1478 "Pågående arbeten, fakturering"
+#SRU 1478 7245
+#KONTO 1479 "Förändring av pågående arbeten"
+#SRU 1479 7245
+#KONTO 1480 "Förskott för varor och tjänster"
+#SRU 1480 7246
+#KONTO 1481 "Remburser"
+#SRU 1481 7246
+#KONTO 1489 "Övriga förskott till leverantörer"
+#SRU 1489 7246
+#KONTO 1490 "Övriga lagertillgångar"
+#SRU 1490 7244
+#KONTO 1491 "Lager av värdepapper"
+#SRU 1491 7244
+#KONTO 1492 "Lager av fastigheter"
+#SRU 1492 7244
+#KONTO 1493 "Djur som klassificeras som omsättningstillgång"
+#SRU 1493 7244
+#KONTO 1510 "Kundfordringar"
+#SRU 1510 7251
+#KONTO 1511 "Kundfordringar"
+#SRU 1511 7251
+#KONTO 1512 "Belånade kundfordringar (factoring)"
+#SRU 1512 7251
+#KONTO 1513 "Kundfordringar - delad faktura"
+#SRU 1513 7251
+#KONTO 1515 "Osäkra kundfordringar"
+#SRU 1515 7251
+#KONTO 1516 "Tvistiga kundfordringar"
+#SRU 1516 7251
+#KONTO 1518 "Ej reskontraförda kundfordringar"
+#SRU 1518 7251
+#KONTO 1519 "Nedskrivning av kundfordringar"
+#SRU 1519 7251
+#KONTO 1520 "Växelfordringar"
+#SRU 1520 7251
+#KONTO 1525 "Osäkra växelfordringar"
+#SRU 1525 7251
+#KONTO 1529 "Nedskrivning av växelfordringar"
+#SRU 1529 7251
+#KONTO 1530 "Kontraktsfordringar"
+#SRU 1530 7251
+#KONTO 1531 "Kontraktsfordringar"
+#SRU 1531 7251
+#KONTO 1532 "Belånade kontraktsfordringar"
+#SRU 1532 7251
+#KONTO 1535 "Osäkra kontraktsfordringar"
+#SRU 1535 7251
+#KONTO 1536 "Tvistiga kontraktsfordringar"
+#SRU 1536 7251
+#KONTO 1539 "Nedskrivning av kontraktsfordringar"
+#SRU 1539 7251
+#KONTO 1550 "Konsignationsfordringar"
+#SRU 1550 7251
+#KONTO 1560 "Kundfordringar hos koncernföretag"
+#SRU 1560 7252
+#KONTO 1561 "Kundfordringar hos moderföretag"
+#SRU 1561 7252
+#KONTO 1562 "Kundfordringar hos dotterföretag"
+#SRU 1562 7252
+#KONTO 1563 "Kundfordringar hos andra koncernföretag"
+#SRU 1563 7252
+#KONTO 1565 "Osäkra kundfordringar hos koncernföretag"
+#SRU 1565 7252
+#KONTO 1568 "Ej reskontraförda kundfordringar hos koncernföretag"
+#SRU 1568 7252
+#KONTO 1569 "Nedskrivning av kundfordringar hos koncernföretag"
+#SRU 1569 7252
+#KONTO 1570 "Kundfordringar hos intresseföretag"
+#SRU 1570 7252
+#KONTO 1575 "Osäkra kundfordringar hos intresseföretag"
+#SRU 1575 7252
+#KONTO 1578 "Ej reskontraförda kundfordringar hos intresseföretag"
+#SRU 1578 7252
+#KONTO 1579 "Nedskrivning av kundfordringar hos intresseföretag"
+#SRU 1579 7252
+#KONTO 1580 "Fordringar för kontokort och kuponger"
+#SRU 1580 7251
+#KONTO 1610 "Kortfristiga fordringar hos anställda"
+#SRU 1610 7261
+#KONTO 1611 "Reseförskott"
+#SRU 1611 7261
+#KONTO 1612 "Kassaförskott"
+#SRU 1612 7261
+#KONTO 1613 "Övriga förskott"
+#SRU 1613 7261
+#KONTO 1614 "Tillfälliga lån till anställda"
+#SRU 1614 7261
+#KONTO 1619 "Övriga fordringar hos anställda"
+#SRU 1619 7261
+#KONTO 1620 "Upparbetad men ej fakturerad intäkt"
+#SRU 1620 7262
+#KONTO 1630 "Avräkning för skatter och avgifter (skattekonto)"
+#SRU 1630 7261
+#KONTO 1640 "Skattefordringar"
+#SRU 1640 7261
+#KONTO 1650 "Momsfordran"
+#SRU 1650 7261
+#KONTO 1660 "Kortfristiga fordringar hos koncernföretag"
+#SRU 1660 7252
+#KONTO 1661 "Kortfristiga fordringar hos moderföretag"
+#SRU 1661 7252
+#KONTO 1662 "Kortfristiga fordringar hos dotterföretag"
+#SRU 1662 7252
+#KONTO 1663 "Kortfristiga fordringar hos andra koncernföretag"
+#SRU 1663 7252
+#KONTO 1670 "Kortfristiga fordringar hos intresseföretag"
+#SRU 1670 7252
+#KONTO 1680 "Andra kortfristiga fordringar"
+#SRU 1680 7261
+#KONTO 1681 "Utlägg för kunder"
+#SRU 1681 7261
+#KONTO 1682 "Kortfristiga lånefordringar"
+#SRU 1682 7261
+#KONTO 1683 "Derivat"
+#SRU 1683 7261
+#KONTO 1684 "Kortfristiga fordringar hos leverantörer"
+#SRU 1684 7261
+#KONTO 1685 "Kortfristiga fordringar hos delägare eller närstående"
+#SRU 1685 7261
+#KONTO 1687 "Kortfristig del av långfristiga fordringar"
+#SRU 1687 7261
+#KONTO 1688 "Fordran arbetsmarknadsförsäkringar"
+#SRU 1688 7261
+#KONTO 1689 "Övriga kortfristiga fordringar"
+#SRU 1689 7261
+#KONTO 1690 "Fordringar för tecknat men ej inbetalt aktiekapital"
+#SRU 1690 7261
+#KONTO 1710 "Förutbetalda hyreskostnader"
+#SRU 1710 7263
+#KONTO 1720 "Förutbetalda leasingavgifter, kortfristig del"
+#SRU 1720 7263
+#KONTO 1730 "Förutbetalda försäkringspremier"
+#SRU 1730 7263
+#KONTO 1740 "Förutbetalda räntekostnader"
+#SRU 1740 7263
+#KONTO 1750 "Upplupna hyresintäkter"
+#SRU 1750 7263
+#KONTO 1760 "Upplupna ränteintäkter"
+#SRU 1760 7263
+#KONTO 1770 "Tillgångar av kostnadsnatur"
+#SRU 1770 7263
+#KONTO 1780 "Upplupna avtalsintäkter"
+#SRU 1780 7263
+#KONTO 1790 "Övriga förutbetalda kostnader och upplupna intäkter"
+#SRU 1790 7263
+#KONTO 1810 "Andelar i börsnoterade företag"
+#SRU 1810 7271
+#KONTO 1820 "Obligationer"
+#SRU 1820 7271
+#KONTO 1830 "Konvertibla skuldebrev"
+#SRU 1830 7271
+#KONTO 1860 "Andelar i koncernföretag"
+#SRU 1860 7270
+#KONTO 1869 "Nedskrivning av andelar i koncernföretag"
+#SRU 1869 7270
+#KONTO 1880 "Andra kortfristiga placeringar"
+#SRU 1880 7271
+#KONTO 1886 "Derivat"
+#SRU 1886 7271
+#KONTO 1889 "Andelar i övriga företag"
+#SRU 1889 7271
+#KONTO 1890 "Nedskrivning av kortfristiga placeringar"
+#SRU 1890 7271
+#KONTO 1910 "Kassa"
+#SRU 1910 7281
+#KONTO 1911 "Huvudkassa"
+#SRU 1911 7281
+#KONTO 1912 "Kassa 2"
+#SRU 1912 7281
+#KONTO 1913 "Kassa 3"
+#SRU 1913 7281
+#KONTO 1914 "Kassa 4"
+#SRU 1914 7281
+#KONTO 1920 "PlusGiro"
+#SRU 1920 7281
+#KONTO 1930 "Företagskonto / affärskonto"
+#SRU 1930 7281
+#KONTO 1931 "Sparkonto"
+#SRU 1931 7281
+#KONTO 1940 "Övriga bankkonton"
+#SRU 1940 7281
+#KONTO 1950 "Bankcertifikat"
+#SRU 1950 7281
+#KONTO 1960 "Koncernkonto moderföretag"
+#SRU 1960 7281
+#KONTO 1970 "Särskilda bankkonton"
+#SRU 1970 7281
+#KONTO 1972 "Upphovsmannakonto"
+#SRU 1972 7281
+#KONTO 1973 "Skogskonto"
+#SRU 1973 7281
+#KONTO 1974 "Spärrade bankmedel"
+#SRU 1974 7281
+#KONTO 1979 "Övriga särskilda bankkonton"
+#SRU 1979 7281
+#KONTO 1980 "Valutakonton"
+#SRU 1980 7281
+#KONTO 1990 "Redovisningsmedel"
+#SRU 1990 7281
+#KONTO 2010 "Eget kapital, delägare 1"
+#KONTO 2011 "Egna varuuttag"
+#KONTO 2012 "Avräkning för skatter och avgifter (skattekonto)"
+#KONTO 2013 "Övriga egna uttag"
+#KONTO 2017 "Årets kapitaltillskott"
+#KONTO 2018 "Övriga egna insättningar"
+#KONTO 2019 "Årets resultat, delägare 1"
+#KONTO 2020 "Eget kapital, delägare 2"
+#KONTO 2023 "Egna uttag delägare 2 (Handelsbolag)"
+#KONTO 2028 "Övriga egna insättningar, delägare 2"
+#KONTO 2029 "Årets resultat, delägare 2"
+#KONTO 2030 "Eget kapital, delägare 3"
+#KONTO 2033 "Egna uttag delägare 3 (Handelsbolag)"
+#KONTO 2038 "Övriga egna insättningar, delägare 3"
+#KONTO 2039 "Årets resultat, delägare 3"
+#KONTO 2040 "Eget kapital, delägare 4"
+#KONTO 2043 "Egna uttag delägare 4 (Handelsbolag)"
+#KONTO 2048 "Övriga egna insättningar, delägare 4"
+#KONTO 2049 "Årets resultat, delägare 4"
+#KONTO 2050 "Avsättning till expansionsfond"
+#KONTO 2060 "Eget kapital i ideella föreningar, stiftelser och registrerade trossamfund"
+#KONTO 2061 "Eget kapital/stiftelsekapital/grundkapital"
+#KONTO 2065 "Förändring i fond för verkligt värde"
+#KONTO 2066 "Värdesäkringsfond"
+#KONTO 2067 "Balanserad vinst eller förlust/balanserat kapital"
+#KONTO 2068 "Vinst eller förlust från föregående år"
+#KONTO 2069 "Årets resultat"
+#KONTO 2070 "Ändamålsbestämda medel"
+#KONTO 2071 "Ändamål 1"
+#KONTO 2072 "Ändamål 2"
+#KONTO 2080 "Bundet eget kapital"
+#SRU 2080 7301
+#KONTO 2081 "Aktiekapital"
+#SRU 2081 7301
+#KONTO 2082 "Ej registrerat aktiekapital"
+#SRU 2082 7301
+#KONTO 2083 "Medlemsinsatser"
+#SRU 2083 7301
+#KONTO 2084 "Förlagsinsatser"
+#SRU 2084 7301
+#KONTO 2085 "Uppskrivningsfond"
+#SRU 2085 7301
+#KONTO 2086 "Reservfond"
+#SRU 2086 7301
+#KONTO 2087 "Insatsemission"
+#SRU 2087 7301
+#KONTO 2088 "Fond för yttre underhåll"
+#SRU 2088 7301
+#KONTO 2090 "Fritt eget kapital"
+#SRU 2090 7302
+#KONTO 2091 "Balanserad vinst eller förlust"
+#SRU 2091 7302
+#KONTO 2092 "Mottagna/lämnade koncernbidrag"
+#SRU 2092 7302
+#KONTO 2093 "Erhållna aktieägartillskott"
+#SRU 2093 7302
+#KONTO 2094 "Egna aktier"
+#SRU 2094 7302
+#KONTO 2095 "Fusionsresultat"
+#SRU 2095 7302
+#KONTO 2096 "Fond för verkligt värde"
+#SRU 2096 7302
+#KONTO 2097 "Överkursfond"
+#SRU 2097 7302
+#KONTO 2098 "Vinst eller förlust från föregående år"
+#SRU 2098 7302
+#KONTO 2099 "Årets resultat"
+#SRU 2099 7302
+#KONTO 2110 "Periodiseringsfond vid 2010 års taxering"
+#SRU 2110 7321
+#KONTO 2111 "Periodiseringsfond vid 2011 års taxering"
+#SRU 2111 7321
+#KONTO 2112 "Periodiseringsfond vid 2012 års taxering"
+#SRU 2112 7321
+#KONTO 2113 "Periodiseringsfond vid 2013 års taxering"
+#SRU 2113 7321
+#KONTO 2120 "Periodiseringsfonder"
+#SRU 2120 7321
+#KONTO 2123 "Periodiseringsfond 2020"
+#SRU 2123 7321
+#KONTO 2124 "Periodiseringsfond 2021"
+#SRU 2124 7321
+#KONTO 2125 "Periodiseringsfond 2015"
+#SRU 2125 7321
+#KONTO 2126 "Periodiseringsfond 2016"
+#SRU 2126 7321
+#KONTO 2127 "Periodiseringsfond 2017"
+#SRU 2127 7321
+#KONTO 2128 "Periodiseringsfond 2018"
+#SRU 2128 7321
+#KONTO 2129 "Periodiseringsfond 2019"
+#SRU 2129 7321
+#KONTO 2150 "Ackumulerade överavskrivningar"
+#SRU 2150 7322
+#KONTO 2151 "Ackumulerade överavskrivningar på immateriella anläggningstillgångar"
+#SRU 2151 7322
+#KONTO 2152 "Ackumulerade överavskrivningar på byggnader och markanläggningar"
+#SRU 2152 7322
+#KONTO 2153 "Ackumulerade överavskrivningar på maskiner och inventarier"
+#SRU 2153 7322
+#KONTO 2160 "Ersättningsfond"
+#SRU 2160 7323
+#KONTO 2161 "Ersättningsfond maskiner och inventarier"
+#SRU 2161 7323
+#KONTO 2162 "Ersättningsfond byggnader och markanläggningar"
+#SRU 2162 7323
+#KONTO 2163 "Ersättningsfond mark"
+#SRU 2163 7323
+#KONTO 2164 "Ersättningsfond för djurlager i jordbruk och renskötsel"
+#SRU 2164 7323
+#KONTO 2180 "Obeskattade intäkter"
+#SRU 2180 7323
+#KONTO 2181 "Obeskattade upphovsmannaintäkter"
+#SRU 2181 7323
+#KONTO 2185 "Obeskattade skogsintäkter"
+#SRU 2185 7323
+#KONTO 2190 "Övriga obeskattade reserver"
+#SRU 2190 7323
+#KONTO 2196 "Lagerreserv"
+#SRU 2196 7323
+#KONTO 2199 "Övriga obeskattade reserver"
+#SRU 2199 7323
+#KONTO 2210 "Avsättningar för pensioner enligt tryggandelagen"
+#SRU 2210 7331
+#KONTO 2220 "Avsättningar för garantier"
+#SRU 2220 7333
+#KONTO 2230 "Övriga avsättningar för pensioner och liknande förpliktelser"
+#SRU 2230 7332
+#KONTO 2240 "Avsättningar för uppskjutna skatter"
+#SRU 2240 7333
+#KONTO 2250 "Övriga avsättningar för skatter"
+#SRU 2250 7333
+#KONTO 2252 "Avsättningar för tvistiga skatter"
+#SRU 2252 7333
+#KONTO 2253 "Avsättningar särskild löneskatt, deklarationspost"
+#SRU 2253 7333
+#KONTO 2290 "Övriga avsättningar"
+#SRU 2290 7333
+#KONTO 2310 "Obligations- och förlagslån"
+#SRU 2310 7350
+#KONTO 2320 "Konvertibla lån och liknande"
+#SRU 2320 7350
+#KONTO 2321 "Konvertibla lån"
+#SRU 2321 7350
+#KONTO 2322 "Lån förenade med optionsrätt"
+#SRU 2322 7350
+#KONTO 2323 "Vinstandelslån"
+#SRU 2323 7350
+#KONTO 2324 "Kapitalandelslån"
+#SRU 2324 7350
+#KONTO 2330 "Checkräkningskredit"
+#SRU 2330 7351
+#KONTO 2340 "Byggnadskreditiv"
+#SRU 2340 7352
+#KONTO 2350 "Andra långfristiga skulder till kreditinstitut"
+#SRU 2350 7352
+#KONTO 2351 "Fastighetslån, långfristig del"
+#SRU 2351 7352
+#KONTO 2355 "Långfristiga lån i utländsk valuta från kreditinstitut"
+#SRU 2355 7352
+#KONTO 2359 "Övriga långfristiga lån från kreditinstitut"
+#SRU 2359 7352
+#KONTO 2360 "Långfristiga skulder till koncernföretag"
+#SRU 2360 7353
+#KONTO 2361 "Långfristiga skulder till moderföretag"
+#SRU 2361 7353
+#KONTO 2362 "Långfristiga skulder till dotterföretag"
+#SRU 2362 7353
+#KONTO 2363 "Långfristiga skulder till andra koncernföretag"
+#SRU 2363 7353
+#KONTO 2370 "Långfristiga skulder till intresseföretag"
+#SRU 2370 7353
+#KONTO 2390 "Övriga långfristiga skulder"
+#SRU 2390 7354
+#KONTO 2391 "Avbetalningskontrakt, långfristig del"
+#SRU 2391 7354
+#KONTO 2392 "Villkorliga långfristiga skulder"
+#SRU 2392 7354
+#KONTO 2393 "Lån från närstående personer, långfristig del"
+#SRU 2393 7354
+#KONTO 2394 "Långfristiga leverantörskrediter"
+#SRU 2394 7354
+#KONTO 2395 "Andra långfristiga lån i utländsk valuta"
+#SRU 2395 7354
+#KONTO 2396 "Derivat"
+#SRU 2396 7354
+#KONTO 2397 "Mottagna depositioner, långfristiga"
+#SRU 2397 7354
+#KONTO 2399 "Övriga långfristiga skulder"
+#SRU 2399 7354
+#KONTO 2410 "Andra kortfristiga låneskulder till kreditinstitut"
+#SRU 2410 7361
+#KONTO 2411 "Kortfristiga lån från kreditinstitut"
+#SRU 2411 7361
+#KONTO 2417 "Kortfristig del av långfristiga skulder till kreditinstitut"
+#SRU 2417 7361
+#KONTO 2419 "Övriga kortfristiga skulder till kreditinstitut"
+#SRU 2419 7361
+#KONTO 2420 "Förskott från kunder"
+#SRU 2420 7362
+#KONTO 2421 "Ej inlösta presentkort"
+#SRU 2421 7362
+#KONTO 2429 "Övriga förskott från kunder"
+#SRU 2429 7362
+#KONTO 2430 "Pågående arbeten"
+#SRU 2430 7363
+#KONTO 2431 "Pågående arbeten, fakturering"
+#SRU 2431 7363
+#KONTO 2438 "Pågående arbeten, nedlagda kostnader"
+#SRU 2438 7363
+#KONTO 2439 "Beräknad förändring av pågående arbeten"
+#SRU 2439 7363
+#KONTO 2440 "Leverantörsskulder"
+#SRU 2440 7365
+#KONTO 2441 "Leverantörsskulder"
+#SRU 2441 7365
+#KONTO 2443 "Konsignationsskulder"
+#SRU 2443 7365
+#KONTO 2445 "Tvistiga leverantörsskulder"
+#SRU 2445 7365
+#KONTO 2448 "Ej reskontraförda leverantörsskulder"
+#SRU 2448 7365
+#KONTO 2450 "Fakturerad men ej upparbetad intäkt"
+#SRU 2450 7364
+#KONTO 2460 "Leverantörsskulder till koncernföretag"
+#SRU 2460 7367
+#KONTO 2461 "Leverantörsskulder till moderföretag"
+#SRU 2461 7367
+#KONTO 2462 "Leverantörsskulder till dotterföretag"
+#SRU 2462 7367
+#KONTO 2463 "Leverantörsskulder till andra koncernföretag"
+#SRU 2463 7367
+#KONTO 2470 "Leverantörsskulder till intresseföretag"
+#SRU 2470 7367
+#KONTO 2480 "Checkräkningskredit, kortfristig"
+#SRU 2480 7360
+#KONTO 2490 "Övriga kortfristiga skulder till kreditinstitut, kunder och leverantörer"
+#SRU 2490 7369
+#KONTO 2491 "Avräkning spelarrangörer"
+#SRU 2491 7369
+#KONTO 2492 "Växelskulder"
+#SRU 2492 7366
+#KONTO 2499 "Andra övriga kortfristiga skulder"
+#SRU 2499 7369
+#KONTO 2510 "Skatteskulder"
+#SRU 2510 7368
+#KONTO 2512 "Beräknad inkomstskatt"
+#SRU 2512 7368
+#KONTO 2513 "Beräknad fastighetsskatt/fastighetsavgift"
+#SRU 2513 7368
+#KONTO 2514 "Beräknad särskild löneskatt på pensionskostnader"
+#SRU 2514 7368
+#KONTO 2515 "Beräknad avkastningsskatt"
+#SRU 2515 7368
+#KONTO 2516 "Moms"
+#SRU 2516 7368
+#KONTO 2517 "Beräknad utländsk skatt"
+#SRU 2517 7368
+#KONTO 2518 "Betald F-skatt"
+#SRU 2518 7368
+#KONTO 2610 "Utgående moms, 25 %"
+#SRU 2610 7369
+#KONTO 2611 "Utgående moms på försäljning inom Sverige, 25 %"
+#SRU 2611 7369
+#KONTO 2612 "Utgående moms på egna uttag, 25 %"
+#SRU 2612 7369
+#KONTO 2613 "Utgående moms för uthyrning, 25 %"
+#SRU 2613 7369
+#KONTO 2614 "Utgående moms omvänd skattskyldighet, 25 %"
+#SRU 2614 7369
+#KONTO 2615 "Utgående moms import av varor, 25%"
+#SRU 2615 7369
+#KONTO 2616 "Utgående moms VMB 25 %"
+#SRU 2616 7369
+#KONTO 2617 "Utgående moms omvänd skattskyldighet varor och tjänster i Sverige, 25 %"
+#SRU 2617 7369
+#KONTO 2618 "Vilande utgående moms, 25 %"
+#SRU 2618 7369
+#KONTO 2620 "Utgående moms, 12 %"
+#SRU 2620 7369
+#KONTO 2621 "Utgående moms på försäljning inom Sverige, 12 %"
+#SRU 2621 7369
+#KONTO 2622 "Utgående moms på egna uttag, 12 %"
+#SRU 2622 7369
+#KONTO 2623 "Utgående moms för uthyrning, 12 %"
+#SRU 2623 7369
+#KONTO 2624 "Utgående moms omvänd skattskyldighet, 12 %"
+#SRU 2624 7369
+#KONTO 2625 "Utgående moms import av varor, 12 %"
+#SRU 2625 7369
+#KONTO 2626 "Utgående moms VMB 12 %"
+#SRU 2626 7369
+#KONTO 2627 "Utgående moms omvänd skattskyldighet varor och tjänster i Sverige, 12 %"
+#SRU 2627 7369
+#KONTO 2628 "Vilande utgående moms, 12 %"
+#SRU 2628 7369
+#KONTO 2630 "Utgående moms, 6 %"
+#SRU 2630 7369
+#KONTO 2631 "Utgående moms på försäljning inom Sverige, 6 %"
+#SRU 2631 7369
+#KONTO 2632 "Utgående moms på egna uttag, 6 %"
+#SRU 2632 7369
+#KONTO 2633 "Utgående moms för uthyrning, 6 %"
+#SRU 2633 7369
+#KONTO 2634 "Utgående moms omvänd skattskyldighet, 6 %"
+#SRU 2634 7369
+#KONTO 2635 "Utgående moms import av varor, 6 %"
+#SRU 2635 7369
+#KONTO 2636 "Utgående moms VMB 6 %"
+#SRU 2636 7369
+#KONTO 2637 "Utgående moms omvänd skattskyldighet varor och tjänster i Sverige, 6 %"
+#SRU 2637 7369
+#KONTO 2638 "Vilande utgående moms, 6 %"
+#SRU 2638 7369
+#KONTO 2640 "Ingående moms"
+#SRU 2640 7369
+#KONTO 2641 "Debiterad ingående moms"
+#SRU 2641 7369
+#KONTO 2642 "Debiterad ingående moms i anslutning till frivillig skattskyldighet"
+#SRU 2642 7369
+#KONTO 2645 "Beräknad ingående moms på förvärv från utlandet"
+#SRU 2645 7369
+#KONTO 2646 "Ingående moms på uthyrning"
+#SRU 2646 7369
+#KONTO 2647 "Ingående moms omvänd skattskyldighet varor och tjänster i Sverige"
+#SRU 2647 7369
+#KONTO 2648 "Vilande ingående moms"
+#SRU 2648 7369
+#KONTO 2649 "Ingående moms, blandad verksamhet"
+#SRU 2649 7369
+#KONTO 2650 "Redovisningskonto för moms"
+#SRU 2650 7369
+#KONTO 2660 "Särskilda punktskatter"
+#SRU 2660 7369
+#KONTO 2661 "Reklamskatt"
+#SRU 2661 7369
+#KONTO 2668 "MOSS, moms"
+#SRU 2668 7369
+#KONTO 2669 "Övriga punktskatter"
+#SRU 2669 7369
+#KONTO 2710 "Personalskatt"
+#SRU 2710 7369
+#KONTO 2730 "Lagstadgade sociala avgifter och särskild löneskatt"
+#SRU 2730 7369
+#KONTO 2731 "Avräkning lagstadgade sociala avgifter"
+#SRU 2731 7369
+#KONTO 2732 "Avräkning särskild löneskatt"
+#SRU 2732 7369
+#KONTO 2740 "Avtalade sociala avgifter"
+#SRU 2740 7369
+#KONTO 2750 "Utmätning i lön m.m."
+#SRU 2750 7369
+#KONTO 2760 "Semestermedel"
+#SRU 2760 7369
+#KONTO 2761 "Avräkning semesterlöner"
+#SRU 2761 7369
+#KONTO 2762 "Semesterlönekassa"
+#SRU 2762 7369
+#KONTO 2790 "Övriga löneavdrag"
+#SRU 2790 7369
+#KONTO 2791 "Personalens intressekonto"
+#SRU 2791 7369
+#KONTO 2792 "Lönsparande"
+#SRU 2792 7369
+#KONTO 2793 "Gruppförsäkringspremier"
+#SRU 2793 7369
+#KONTO 2794 "Fackföreningsavgifter"
+#SRU 2794 7369
+#KONTO 2795 "Mätnings- och granskningsarvoden"
+#SRU 2795 7369
+#KONTO 2799 "Övriga löneavdrag"
+#SRU 2799 7369
+#KONTO 2810 "Avräkning för factoring och belånade kontraktsfordringar"
+#SRU 2810 7369
+#KONTO 2811 "Avräkning för factoring"
+#SRU 2811 7369
+#KONTO 2812 "Avräkning för belånade kontraktsfordringar"
+#SRU 2812 7369
+#KONTO 2820 "Kortfristiga skulder till anställda"
+#SRU 2820 7369
+#KONTO 2821 "Löneskulder"
+#SRU 2821 7369
+#KONTO 2822 "Reseräkningar"
+#SRU 2822 7369
+#KONTO 2823 "Tantiem, gratifikationer"
+#SRU 2823 7369
+#KONTO 2829 "Övriga kortfristiga skulder till anställda"
+#SRU 2829 7369
+#KONTO 2830 "Avräkning för annans räkning"
+#SRU 2830 7369
+#KONTO 2840 "Kortfristiga låneskulder"
+#SRU 2840 7369
+#KONTO 2841 "Kortfristig del av långfristiga skulder"
+#SRU 2841 7369
+#KONTO 2849 "Övriga kortfristiga låneskulder"
+#SRU 2849 7369
+#KONTO 2850 "Avräkning för skatter och avgifter (skattekonto)"
+#SRU 2850 7369
+#KONTO 2860 "Kortfristiga skulder till koncernföretag"
+#SRU 2860 7367
+#KONTO 2861 "Kortfristiga skulder till moderföretag"
+#SRU 2861 7367
+#KONTO 2862 "Kortfristiga skulder till dotterföretag"
+#SRU 2862 7367
+#KONTO 2863 "Kortfristiga skulder till andra koncernföretag"
+#SRU 2863 7367
+#KONTO 2870 "Kortfristiga skulder till intresseföretag"
+#SRU 2870 7367
+#KONTO 2880 "Skuld erhållna bidrag"
+#SRU 2880 7369
+#KONTO 2890 "Övriga kortfristiga skulder"
+#SRU 2890 7369
+#KONTO 2891 "Skulder under indrivning"
+#SRU 2891 7369
+#KONTO 2892 "Inre reparationsfond/underhållsfond"
+#SRU 2892 7369
+#KONTO 2893 "Skulder till närstående personer, kortfristig del"
+#SRU 2893 7369
+#KONTO 2895 "Derivat (kortfristiga skulder)"
+#SRU 2895 7369
+#KONTO 2897 "Mottagna depositioner, kortfristiga"
+#SRU 2897 7369
+#KONTO 2898 "Outtagen vinstutdelning"
+#SRU 2898 7369
+#KONTO 2899 "Övriga kortfristiga skulder"
+#SRU 2899 7369
+#KONTO 2910 "Upplupna löner"
+#SRU 2910 7370
+#KONTO 2911 "Löneskulder"
+#SRU 2911 7370
+#KONTO 2912 "Ackordsöverskott"
+#SRU 2912 7370
+#KONTO 2919 "Övriga upplupna löner"
+#SRU 2919 7370
+#KONTO 2920 "Upplupna semesterlöner"
+#SRU 2920 7370
+#KONTO 2930 "Upplupna pensionskostnader"
+#SRU 2930 7370
+#KONTO 2931 "Upplupna pensionsutbetalningar"
+#SRU 2931 7370
+#KONTO 2940 "Upplupna lagstadgade sociala och andra avgifter"
+#SRU 2940 7370
+#KONTO 2941 "Beräknade upplupna lagstadgade sociala avgifter"
+#SRU 2941 7370
+#KONTO 2942 "Beräknad upplupen särskild löneskatt"
+#SRU 2942 7370
+#KONTO 2943 "Beräknad upplupen särskild löneskatt på pensionskostnader, deklarationspost"
+#SRU 2943 7370
+#KONTO 2944 "Beräknad upplupen avkastningsskatt på pensionskostnader"
+#SRU 2944 7370
+#KONTO 2950 "Upplupna avtalade sociala avgifter"
+#SRU 2950 7370
+#KONTO 2951 "Upplupna avtalade arbetsmarknadsförsäkringar"
+#SRU 2951 7370
+#KONTO 2959 "Upplupna avtalade pensionsförsäkringsavgifter, deklarationspost"
+#SRU 2959 7370
+#KONTO 2960 "Upplupna räntekostnader"
+#SRU 2960 7370
+#KONTO 2970 "Förutbetalda intäkter"
+#SRU 2970 7370
+#KONTO 2971 "Förutbetalda hyresintäkter"
+#SRU 2971 7370
+#KONTO 2972 "Förutbetalda medlemsavgifter"
+#SRU 2972 7370
+#KONTO 2979 "Övriga förutbetalda intäkter"
+#SRU 2979 7370
+#KONTO 2980 "Upplupna avtalskostnader"
+#SRU 2980 7370
+#KONTO 2990 "Övriga upplupna kostnader och förutbetalda intäkter"
+#SRU 2990 7370
+#KONTO 2991 "Beräknat arvode för bokslut"
+#SRU 2991 7370
+#KONTO 2992 "Beräknat arvode för revision"
+#SRU 2992 7370
+#KONTO 2993 "Ospecificerad skuld till leverantörer"
+#SRU 2993 7370
+#KONTO 2998 "Övriga upplupna kostnader och förutbetalda intäkter"
+#SRU 2998 7370
+#KONTO 2999 "OBS-konto"
+#SRU 2999 7370
+#KONTO 3000 "Försäljning inom Sverige"
+#SRU 3000 7410
+#KONTO 3001 "Försäljning varor inom Sverige, 25 % moms"
+#SRU 3001 7410
+#KONTO 3002 "Försäljning varor inom Sverige, 12 % moms"
+#SRU 3002 7410
+#KONTO 3003 "Försäljning varor inom Sverige, 6 % moms"
+#SRU 3003 7410
+#KONTO 3004 "Försäljning varor inom Sverige, momsfri"
+#SRU 3004 7410
+#KONTO 3011 "Försäljning tjänster inom Sverige, 25 % moms"
+#SRU 3011 7410
+#KONTO 3012 "Försäljning tjänster inom Sverige, 12 % moms"
+#SRU 3012 7410
+#KONTO 3013 "Försäljning tjänster inom Sverige, 6 % moms"
+#SRU 3013 7410
+#KONTO 3014 "Försäljning tjänster inom Sverige, momsfri"
+#SRU 3014 7410
+#KONTO 3071 "Förutbetalda intäkter, varor och tjänster"
+#SRU 3071 7410
+#KONTO 3089 "Försäljning inom Sverige, momsfri"
+#SRU 3089 7410
+#KONTO 3105 "Försäljning varor till land utanför EU"
+#SRU 3105 7410
+#KONTO 3106 "Försäljning varor till annat EU-land, momspliktig"
+#SRU 3106 7410
+#KONTO 3107 "Treparts försäljn varor till EU"
+#SRU 3107 7410
+#KONTO 3108 "Försäljning varor till annat EU-land, momsfri"
+#SRU 3108 7410
+#KONTO 3200 "Försäljning VMB och omvänd moms"
+#SRU 3200 7410
+#KONTO 3211 "Försäljning positiv VMB 25 %"
+#SRU 3211 7410
+#KONTO 3212 "Försäljning negativ VMB 25 %"
+#SRU 3212 7410
+#KONTO 3223 "Positiv VM omföringskonto"
+#SRU 3223 7410
+#KONTO 3231 "Försäljning inom byggsektorn, omvänd skattskyldighet moms"
+#SRU 3231 7410
+#KONTO 3305 "Försäljning tjänster till land utanför EU"
+#SRU 3305 7410
+#KONTO 3308 "Försäljning tjänster till annat EU-land"
+#SRU 3308 7410
+#KONTO 3389 "Försäljning EU moms/MOSS"
+#SRU 3389 7410
+#KONTO 3401 "Egna uttag momspliktiga, 25 %"
+#SRU 3401 7410
+#KONTO 3402 "Egna uttag momspliktiga, 12 %"
+#SRU 3402 7410
+#KONTO 3403 "Egna uttag momspliktiga, 6 %"
+#SRU 3403 7410
+#KONTO 3404 "Egna uttag, momsfria"
+#SRU 3404 7410
+#KONTO 3500 "Fakturerade kostnader (gruppkonto)"
+#SRU 3500 7410
+#KONTO 3510 "Fakturerat emballage"
+#SRU 3510 7410
+#KONTO 3511 "Fakturerat emballage"
+#SRU 3511 7410
+#KONTO 3518 "Returnerat emballage"
+#SRU 3518 7410
+#KONTO 3520 "Fakturerade frakter"
+#SRU 3520 7410
+#KONTO 3521 "Fakturerade frakter, EU-land"
+#SRU 3521 7410
+#KONTO 3522 "Fakturerade frakter, export"
+#SRU 3522 7410
+#KONTO 3530 "Fakturerade tull- och speditionskostnader m.m."
+#SRU 3530 7410
+#KONTO 3540 "Faktureringsavgifter"
+#SRU 3540 7410
+#KONTO 3541 "Faktureringsavgifter, EU-land"
+#SRU 3541 7410
+#KONTO 3542 "Faktureringsavgifter, export"
+#SRU 3542 7410
+#KONTO 3550 "Fakturerade resekostnader"
+#SRU 3550 7410
+#KONTO 3560 "Fakturerade kostnader till koncernföretag"
+#SRU 3560 7410
+#KONTO 3561 "Fakturerade kostnader till moderföretag"
+#SRU 3561 7410
+#KONTO 3562 "Fakturerade kostnader till dotterföretag"
+#SRU 3562 7410
+#KONTO 3563 "Fakturerade kostnader till andra koncernföretag"
+#SRU 3563 7410
+#KONTO 3570 "Fakturerade kostnader till intresseföretag"
+#SRU 3570 7410
+#KONTO 3590 "Övriga fakturerade kostnader"
+#SRU 3590 7410
+#KONTO 3600 "Rörelsens sidointäkter (gruppkonto)"
+#SRU 3600 7410
+#KONTO 3610 "Försäljning av material"
+#SRU 3610 7410
+#KONTO 3611 "Försäljning av råmaterial"
+#SRU 3611 7410
+#KONTO 3612 "Försäljning av skrot"
+#SRU 3612 7410
+#KONTO 3613 "Försäljning av förbrukningsmaterial"
+#SRU 3613 7410
+#KONTO 3619 "Försäljning av övrigt material"
+#SRU 3619 7410
+#KONTO 3620 "Tillfällig uthyrning av personal"
+#SRU 3620 7410
+#KONTO 3630 "Tillfällig uthyrning av transportmedel"
+#SRU 3630 7410
+#KONTO 3670 "Intäkter från värdepapper"
+#SRU 3670 7410
+#KONTO 3671 "Försäljning av värdepapper"
+#SRU 3671 7410
+#KONTO 3672 "Utdelning från värdepapper"
+#SRU 3672 7410
+#KONTO 3679 "Övriga intäkter från värdepapper"
+#SRU 3679 7410
+#KONTO 3680 "Management fees"
+#SRU 3680 7410
+#KONTO 3690 "Övriga sidointäkter"
+#SRU 3690 7410
+#KONTO 3700 "Intäktskorrigeringar (gruppkonto)"
+#SRU 3700 7410
+#KONTO 3710 "Ofördelade intäktsreduktioner"
+#SRU 3710 7410
+#KONTO 3730 "Lämnade rabatter"
+#SRU 3730 7410
+#KONTO 3731 "Lämnade kassarabatter"
+#SRU 3731 7410
+#KONTO 3732 "Lämnade mängdrabatter"
+#SRU 3732 7410
+#KONTO 3740 "Öres- och kronutjämning"
+#SRU 3740 7410
+#KONTO 3750 "Punktskatter"
+#SRU 3750 7410
+#KONTO 3751 "Intäktsförda punktskatter (kreditkonto)"
+#SRU 3751 7410
+#KONTO 3752 "Skuldförda punktskatter (debetkonto)"
+#SRU 3752 7410
+#KONTO 3790 "Övriga intäktskorrigeringar"
+#SRU 3790 7410
+#KONTO 3800 "Aktiverat arbete för egen räkning (gruppkonto)"
+#SRU 3800 7412
+#KONTO 3840 "Aktiverat arbete (material)"
+#SRU 3840 7412
+#KONTO 3850 "Aktiverat arbete (omkostnader)"
+#SRU 3850 7412
+#KONTO 3870 "Aktiverat arbete (personal)"
+#SRU 3870 7412
+#KONTO 3900 "Övriga rörelseintäkter (gruppkonto)"
+#SRU 3900 7413
+#KONTO 3910 "Hyres- och arrendeintäkter"
+#SRU 3910 7413
+#KONTO 3911 "Hyresintäkter"
+#SRU 3911 7413
+#KONTO 3912 "Arrendeintäkter"
+#SRU 3912 7413
+#KONTO 3913 "Frivilligt momspliktiga hyresintäkter"
+#SRU 3913 7413
+#KONTO 3914 "Övriga momspliktiga hyresintäkter"
+#SRU 3914 7413
+#KONTO 3920 "Provisionsintäkter, licensintäkter och royalties"
+#SRU 3920 7413
+#KONTO 3921 "Provisionsintäkter"
+#SRU 3921 7413
+#KONTO 3922 "Licensintäkter och royalties"
+#SRU 3922 7413
+#KONTO 3925 "Franchiseintäkter"
+#SRU 3925 7413
+#KONTO 3930 "Påminnelseavgifter"
+#SRU 3930 7413
+#KONTO 3940 "Orealiserade negativa/positiva värdeförändringar på säkringsinstrument"
+#SRU 3940 7413
+#KONTO 3950 "Återvunna, tidigare avskrivna kundfordringar"
+#SRU 3950 7413
+#KONTO 3960 "Valutakursvinster på fordringar och skulder av rörelsekaraktär"
+#SRU 3960 7413
+#KONTO 3970 "Vinst vid avyttring av immateriella och materiella anläggningstillgångar"
+#SRU 3970 7413
+#KONTO 3971 "Vinst vid avyttring av immateriella anläggningstillgångar"
+#SRU 3971 7413
+#KONTO 3972 "Vinst vid avyttring av byggnader och mark"
+#SRU 3972 7413
+#KONTO 3973 "Vinst vid avyttring av maskiner och inventarier"
+#SRU 3973 7413
+#KONTO 3980 "Erhållna offentliga stöd m.m."
+#SRU 3980 7413
+#KONTO 3981 "Erhållna EU-bidrag"
+#SRU 3981 7413
+#KONTO 3985 "Erhållna statliga bidrag"
+#SRU 3985 7413
+#KONTO 3987 "Erhållna kommunala bidrag"
+#SRU 3987 7413
+#KONTO 3988 "Erhållna bidrag och ersättningar för personal"
+#SRU 3988 7413
+#KONTO 3989 "Övriga erhållna bidrag"
+#SRU 3989 7413
+#KONTO 3990 "Övriga ersättningar och intäkter"
+#SRU 3990 7413
+#KONTO 3991 "Konfliktersättning"
+#SRU 3991 7413
+#KONTO 3992 "Erhållna skadestånd"
+#SRU 3992 7413
+#KONTO 3993 "Erhållna donationer och gåvor"
+#SRU 3993 7413
+#KONTO 3994 "Försäkringsersättningar"
+#SRU 3994 7413
+#KONTO 3995 "Erhållet ackord på skulder av rörelsekaraktär"
+#SRU 3995 7413
+#KONTO 3996 "Erhållna reklambidrag"
+#SRU 3996 7413
+#KONTO 3997 "Sjuklöneersättning"
+#SRU 3997 7413
+#KONTO 3998 "Sjukpenning"
+#SRU 3998 7413
+#KONTO 3999 "Övriga rörelseintäkter"
+#SRU 3999 7413
+#KONTO 4000 "Inköp av varor från Sverige"
+#SRU 4000 7512
+#KONTO 4010 "Inköp material och varor"
+#SRU 4010 7512
+#KONTO 4200 "Sålda varor VMB"
+#SRU 4200 7512
+#KONTO 4211 "Sålda varor positiv VMB 25 %"
+#SRU 4211 7512
+#KONTO 4212 "Sålda varor negativ VMB 25 %"
+#SRU 4212 7512
+#KONTO 4400 "Inköpta tjänster i Sverige, omvänd skattskyldighet"
+#SRU 4400 7512
+#KONTO 4415 "Inköpta varor i Sverige, omvänd skattskyldighet, 25 %"
+#SRU 4415 7512
+#KONTO 4416 "Inköpta varor i Sverige, omvänd skattskyldighet, 12 %"
+#SRU 4416 7512
+#KONTO 4417 "Inköpta varor i Sverige, omvänd skattskyldighet, 6 %"
+#SRU 4417 7512
+#KONTO 4425 "Inköpta tjänster i Sverige, omvänd skattskyldighet, 25 %"
+#SRU 4425 7512
+#KONTO 4426 "Inköpta tjänster i Sverige, omvänd skattskyldighet, 12 %"
+#SRU 4426 7512
+#KONTO 4427 "Inköpta tjänster i Sverige, omvänd skattskyldighet, 6 %"
+#SRU 4427 7512
+#KONTO 4500 "Inköp utanför Sverige"
+#SRU 4500 7512
+#KONTO 4512 "Förvärv varor, trepartsförvärv från annat EU-land, mellan man"
+#SRU 4512 7512
+#KONTO 4515 "Inköp av varor från annat EU-land, 25 %"
+#SRU 4515 7512
+#KONTO 4516 "Inköp av varor från annat EU-land, 12 %"
+#SRU 4516 7512
+#KONTO 4517 "Inköp av varor från annat EU-land, 6 %"
+#SRU 4517 7512
+#KONTO 4518 "Inköp av varor från annat EU-land, momsfri"
+#SRU 4518 7512
+#KONTO 4531 "Import tjänster land utanför EU, 25% moms"
+#SRU 4531 7512
+#KONTO 4532 "Import tjänster land utanför EU, 12% moms"
+#SRU 4532 7512
+#KONTO 4533 "Import tjänster land utanför EU, 6% moms"
+#SRU 4533 7512
+#KONTO 4534 "Import tjänster land utanför EU, momsfri"
+#SRU 4534 7512
+#KONTO 4535 "Inköp av tjänster från annat EU-land, 25 %"
+#SRU 4535 7512
+#KONTO 4536 "Inköp av tjänster från annat EU-land, 12 %"
+#SRU 4536 7512
+#KONTO 4537 "Inköp av tjänster från annat EU-land, 6 %"
+#SRU 4537 7512
+#KONTO 4538 "Inköp av tjänster från annat EU-land, momsfri"
+#SRU 4538 7512
+#KONTO 4545 "Import av varor, 25 % moms"
+#SRU 4545 7512
+#KONTO 4546 "Import av varor, 12 % moms"
+#SRU 4546 7512
+#KONTO 4547 "Import av varor, 6 % moms"
+#SRU 4547 7512
+#KONTO 4549 "Motkonto beskattningsunderlag import"
+#SRU 4549 7512
+#KONTO 4598 "Justering, omvänd moms"
+#SRU 4598 7512
+#KONTO 4600 "Legoarbeten och underentreprenader (gruppkonto)"
+#SRU 4600 7512
+#KONTO 4700 "Reduktion av inköpspriser (gruppkonto)"
+#SRU 4700 7512
+#KONTO 4730 "Erhållna rabatter"
+#SRU 4730 7512
+#KONTO 4731 "Erhållna kassarabatter"
+#SRU 4731 7512
+#KONTO 4732 "Erhållna mängdrabatter (inkl. bonus)"
+#SRU 4732 7512
+#KONTO 4733 "Erhållet aktivitetsstöd"
+#SRU 4733 7512
+#KONTO 4790 "Övriga reduktioner av inköpspriser"
+#SRU 4790 7512
+#KONTO 4900 "Förändring av lager (gruppkonto)"
+#SRU 4900 7411
+#KONTO 4910 "Förändring av lager av råvaror"
+#SRU 4910 7511
+#KONTO 4920 "Förändring av lager av tillsatsmaterial och förnödenheter"
+#SRU 4920 7511
+#KONTO 4930 "Förändring av lager av halvfabrikat"
+#SRU 4930 7511
+#KONTO 4931 "Förändring av lager av köpta halvfabrikat"
+#SRU 4931 7511
+#KONTO 4932 "Förändring av lager av egentillverkade halvfabrikat"
+#SRU 4932 7411
+#KONTO 4940 "Förändring av produkter i arbete"
+#SRU 4940 7411
+#KONTO 4944 "Förändring av produkter i arbete, material och utlägg"
+#SRU 4944 7411
+#KONTO 4945 "Förändring av produkter i arbete, omkostnader"
+#SRU 4945 7411
+#KONTO 4947 "Förändring av produkter i arbete, personalkostnader"
+#SRU 4947 7411
+#KONTO 4950 "Förändring av lager av färdiga varor"
+#SRU 4950 7411
+#KONTO 4960 "Förändring av lager av handelsvaror"
+#SRU 4960 7512
+#KONTO 4970 "Förändring av pågående arbeten, nedlagda kostnader"
+#SRU 4970 7411
+#KONTO 4974 "Förändring av pågående arbeten, material och utlägg"
+#SRU 4974 7411
+#KONTO 4975 "Förändring av pågående arbeten, omkostnader"
+#SRU 4975 7411
+#KONTO 4977 "Förändring av pågående arbeten, personalkostnader"
+#SRU 4977 7411
+#KONTO 4980 "Förändring av lager av värdepapper"
+#SRU 4980 7512
+#KONTO 4981 "Sålda värdepappers anskaffningsvärde"
+#SRU 4981 7512
+#KONTO 4987 "Nedskrivning av värdepapper"
+#SRU 4987 7512
+#KONTO 4988 "Återföring av nedskrivning av värdepapper"
+#SRU 4988 7512
+#KONTO 4990 "Förändring av lager och pågående arbeten (ofördelad)"
+#SRU 4990 7411
+#KONTO 5000 "Lokalkostnader (gruppkonto)"
+#SRU 5000 7513
+#KONTO 5010 "Lokalhyra"
+#SRU 5010 7513
+#KONTO 5011 "Hyra för kontorslokaler"
+#SRU 5011 7513
+#KONTO 5012 "Hyra för garage"
+#SRU 5012 7513
+#KONTO 5013 "Hyra för lagerlokaler"
+#SRU 5013 7513
+#KONTO 5020 "El för belysning"
+#SRU 5020 7513
+#KONTO 5030 "Värme"
+#SRU 5030 7513
+#KONTO 5040 "Vatten och avlopp"
+#SRU 5040 7513
+#KONTO 5050 "Lokaltillbehör"
+#SRU 5050 7513
+#KONTO 5060 "Städning och renhållning"
+#SRU 5060 7513
+#KONTO 5061 "Städning"
+#SRU 5061 7513
+#KONTO 5062 "Sophämtning"
+#SRU 5062 7513
+#KONTO 5063 "Hyra för sopcontainer"
+#SRU 5063 7513
+#KONTO 5064 "Snöröjning"
+#SRU 5064 7513
+#KONTO 5065 "Trädgårdsskötsel"
+#SRU 5065 7513
+#KONTO 5070 "Reparation och underhåll av lokaler"
+#SRU 5070 7513
+#KONTO 5090 "Övriga lokalkostnader"
+#SRU 5090 7513
+#KONTO 5098 "Övriga lokalkostnader, avdragsgilla"
+#SRU 5098 7513
+#KONTO 5099 "Övriga lokalkostnader, ej avdragsgilla"
+#SRU 5099 7513
+#KONTO 5100 "Fastighetskostnader (gruppkonto)"
+#SRU 5100 7513
+#KONTO 5110 "Tomträttsavgäld/arrende"
+#SRU 5110 7513
+#KONTO 5120 "El för belysning"
+#SRU 5120 7513
+#KONTO 5130 "Värme"
+#SRU 5130 7513
+#KONTO 5131 "Uppvärmning"
+#SRU 5131 7513
+#KONTO 5132 "Sotning"
+#SRU 5132 7513
+#KONTO 5140 "Vatten och avlopp"
+#SRU 5140 7513
+#KONTO 5160 "Städning och renhållning"
+#SRU 5160 7513
+#KONTO 5161 "Städning"
+#SRU 5161 7513
+#KONTO 5162 "Sophämtning"
+#SRU 5162 7513
+#KONTO 5163 "Hyra för sopcontainer"
+#SRU 5163 7513
+#KONTO 5164 "Snöröjning"
+#SRU 5164 7513
+#KONTO 5165 "Trädgårdsskötsel"
+#SRU 5165 7513
+#KONTO 5170 "Reparation och underhåll av fastighet"
+#SRU 5170 7513
+#KONTO 5190 "Övriga fastighetskostnader"
+#SRU 5190 7513
+#KONTO 5191 "Fastighetsskatt/fastighetsavgift"
+#SRU 5191 7513
+#KONTO 5192 "Fastighetsförsäkringspremier"
+#SRU 5192 7513
+#KONTO 5193 "Fastighetsskötsel och förvaltning"
+#SRU 5193 7513
+#KONTO 5198 "Övriga fastighetskostnader, avdragsgilla"
+#SRU 5198 7513
+#KONTO 5199 "Övriga fastighetskostnader, ej avdragsgilla"
+#SRU 5199 7513
+#KONTO 5200 "Hyra av anläggningstillgångar (gruppkonto)"
+#SRU 5200 7513
+#KONTO 5210 "Hyra av maskiner och andra tekniska anläggningar"
+#SRU 5210 7513
+#KONTO 5211 "Korttidshyra av maskiner och andra tekniska anläggningar"
+#SRU 5211 7513
+#KONTO 5212 "Leasing av maskiner och andra tekniska anläggningar"
+#SRU 5212 7513
+#KONTO 5220 "Hyra av inventarier och verktyg"
+#SRU 5220 7513
+#KONTO 5221 "Korttidshyra av inventarier och verktyg"
+#SRU 5221 7513
+#KONTO 5222 "Leasing av inventarier och verktyg"
+#SRU 5222 7513
+#KONTO 5250 "Hyra av datorer"
+#SRU 5250 7513
+#KONTO 5251 "Korttidshyra av datorer"
+#SRU 5251 7513
+#KONTO 5252 "Leasing av datorer"
+#SRU 5252 7513
+#KONTO 5290 "Övriga hyreskostnader för anläggningstillgångar"
+#SRU 5290 7513
+#KONTO 5300 "Energikostnader (gruppkonto)"
+#SRU 5300 7513
+#KONTO 5310 "El för drift"
+#SRU 5310 7513
+#KONTO 5320 "Gas"
+#SRU 5320 7513
+#KONTO 5330 "Eldningsolja"
+#SRU 5330 7513
+#KONTO 5340 "Stenkol och koks"
+#SRU 5340 7513
+#KONTO 5350 "Torv, träkol, ved och annat träbränsle"
+#SRU 5350 7513
+#KONTO 5360 "Bensin, fotogen och motorbrännolja"
+#SRU 5360 7513
+#KONTO 5370 "Fjärrvärme, kyla och ånga"
+#SRU 5370 7513
+#KONTO 5380 "Vatten"
+#SRU 5380 7513
+#KONTO 5390 "Övriga energikostnader"
+#SRU 5390 7513
+#KONTO 5400 "Förbrukningsinventarier och förbrukningsmaterial (gruppkonto)"
+#SRU 5400 7513
+#KONTO 5410 "Förbrukningsinventarier"
+#SRU 5410 7513
+#KONTO 5411 "Förbrukningsinventarier med en livslängd på mer än ett år"
+#SRU 5411 7513
+#KONTO 5412 "Förbrukningsinventarier med en livslängd på ett år eller mindre"
+#SRU 5412 7513
+#KONTO 5420 "Programvaror"
+#SRU 5420 7513
+#KONTO 5430 "Transportinventarier"
+#SRU 5430 7513
+#KONTO 5440 "Förbrukningsemballage"
+#SRU 5440 7513
+#KONTO 5460 "Förbrukningsmaterial"
+#SRU 5460 7513
+#KONTO 5480 "Arbetskläder och skyddsmaterial"
+#SRU 5480 7513
+#KONTO 5490 "Övriga förbrukningsinventarier och förbrukningsmaterial"
+#SRU 5490 7513
+#KONTO 5491 "Övriga förbrukningsinventarier med en livslängd på mer än ett år"
+#SRU 5491 7513
+#KONTO 5492 "Övriga förbrukningsinventarier med en livslängd på ett år eller mindre"
+#SRU 5492 7513
+#KONTO 5493 "Övrigt förbrukningsmaterial"
+#SRU 5493 7513
+#KONTO 5500 "Reparation och underhåll (gruppkonto)"
+#SRU 5500 7513
+#KONTO 5510 "Reparation och underhåll av maskiner och andra tekniska anläggningar"
+#SRU 5510 7513
+#KONTO 5520 "Reparation och underhåll av inventarier, verktyg och datorer m.m."
+#SRU 5520 7513
+#KONTO 5530 "Reparation och underhåll av installationer"
+#SRU 5530 7513
+#KONTO 5550 "Reparation och underhåll av förbrukningsinventarier"
+#SRU 5550 7513
+#KONTO 5580 "Underhåll och tvätt av arbetskläder"
+#SRU 5580 7513
+#KONTO 5590 "Övriga kostnader för reparation och underhåll"
+#SRU 5590 7513
+#KONTO 5600 "Kostnader för transportmedel (gruppkonto)"
+#SRU 5600 7513
+#KONTO 5610 "Personbilskostnader"
+#SRU 5610 7513
+#KONTO 5611 "Drivmedel för personbilar"
+#SRU 5611 7513
+#KONTO 5612 "Försäkring och skatt för personbilar"
+#SRU 5612 7513
+#KONTO 5613 "Reparation och underhåll av personbilar"
+#SRU 5613 7513
+#KONTO 5615 "Leasing av personbilar"
+#SRU 5615 7513
+#KONTO 5616 "Trängselskatt, avdragsgill"
+#SRU 5616 7513
+#KONTO 5619 "Övriga personbilskostnader"
+#SRU 5619 7513
+#KONTO 5620 "Lastbilskostnader"
+#SRU 5620 7513
+#KONTO 5630 "Truckkostnader"
+#SRU 5630 7513
+#KONTO 5640 "Kostnader för arbetsmaskiner"
+#SRU 5640 7513
+#KONTO 5650 "Traktorkostnader"
+#SRU 5650 7513
+#KONTO 5660 "Motorcykel-, moped- och skoterkostnader"
+#SRU 5660 7513
+#KONTO 5670 "Båt-, flygplans- och helikopterkostnader"
+#SRU 5670 7513
+#KONTO 5690 "Övriga kostnader för transportmedel"
+#SRU 5690 7513
+#KONTO 5700 "Frakter och transporter (gruppkonto)"
+#SRU 5700 7513
+#KONTO 5710 "Frakter, transporter och försäkringar vid varudistribution"
+#SRU 5710 7513
+#KONTO 5720 "Tull- och speditionskostnader m.m."
+#SRU 5720 7513
+#KONTO 5730 "Arbetstransporter"
+#SRU 5730 7513
+#KONTO 5790 "Övriga kostnader för frakter och transporter"
+#SRU 5790 7513
+#KONTO 5800 "Resekostnader (gruppkonto)"
+#SRU 5800 7513
+#KONTO 5810 "Biljetter"
+#SRU 5810 7513
+#KONTO 5820 "Hyrbilskostnader"
+#SRU 5820 7513
+#KONTO 5830 "Kost och logi"
+#SRU 5830 7513
+#KONTO 5831 "Kost och logi i Sverige"
+#SRU 5831 7513
+#KONTO 5832 "Kost och logi i utlandet"
+#SRU 5832 7513
+#KONTO 5841 "Milersättning, avdragsgill (Ägare enskild firma)"
+#SRU 5841 7513
+#KONTO 5842 "Milersättning, ej avdragsgill (Ägare enskild firma)"
+#SRU 5842 7513
+#KONTO 5843 "Traktamente Sverige avdragsgillt (Ägare enskild firma)"
+#SRU 5843 7513
+#KONTO 5844 "Traktamente Sverige ej avdragsgillt (Ägare enskild firma)"
+#SRU 5844 7513
+#KONTO 5845 "Traktamente Utlandet avdragsgillt (Ägare enskild firma)"
+#SRU 5845 7513
+#KONTO 5846 "Traktamente Utlandet ej avdragsgillt (Ägare enskild firma)"
+#SRU 5846 7513
+#KONTO 5890 "Övriga resekostnader"
+#SRU 5890 7513
+#KONTO 5900 "Reklam och PR (gruppkonto)"
+#SRU 5900 7513
+#KONTO 5910 "Annonsering"
+#SRU 5910 7513
+#KONTO 5920 "Utomhus- och trafikreklam"
+#SRU 5920 7513
+#KONTO 5930 "Reklamtrycksaker och direktreklam"
+#SRU 5930 7513
+#KONTO 5940 "Utställningar och mässor"
+#SRU 5940 7513
+#KONTO 5950 "Butiksreklam och återförsäljarreklam"
+#SRU 5950 7513
+#KONTO 5960 "Varuprover, reklamgåvor, presentreklam och tävlingar"
+#SRU 5960 7513
+#KONTO 5970 "Film-, radio-, TV- och Internetreklam"
+#SRU 5970 7513
+#KONTO 5980 "PR, institutionell reklam och sponsring"
+#SRU 5980 7513
+#KONTO 5990 "Övriga kostnader för reklam och PR"
+#SRU 5990 7513
+#KONTO 6000 "Övriga försäljningskostnader (gruppkonto)"
+#SRU 6000 7513
+#KONTO 6010 "Kataloger, prislistor m.m."
+#SRU 6010 7513
+#KONTO 6020 "Egna facktidskrifter"
+#SRU 6020 7513
+#KONTO 6030 "Speciella orderkostnader"
+#SRU 6030 7513
+#KONTO 6040 "Kontokortsavgifter"
+#SRU 6040 7513
+#KONTO 6050 "Försäljningsprovisioner"
+#SRU 6050 7513
+#KONTO 6055 "Franchisekostnader o.dyl."
+#SRU 6055 7513
+#KONTO 6060 "Kreditförsäljningskostnader"
+#SRU 6060 7513
+#KONTO 6061 "Kreditupplysning"
+#SRU 6061 7513
+#KONTO 6062 "Inkasso och KFM-avgifter"
+#SRU 6062 7513
+#KONTO 6063 "Kreditförsäkringspremier"
+#SRU 6063 7513
+#KONTO 6064 "Factoringavgifter"
+#SRU 6064 7513
+#KONTO 6069 "Övriga kreditförsäljningskostnader"
+#SRU 6069 7513
+#KONTO 6070 "Representation"
+#SRU 6070 7513
+#KONTO 6071 "Representation, avdragsgill"
+#SRU 6071 7513
+#KONTO 6072 "Representation, ej avdragsgill"
+#SRU 6072 7513
+#KONTO 6080 "Bankgarantier"
+#SRU 6080 7513
+#KONTO 6090 "Övriga försäljningskostnader"
+#SRU 6090 7513
+#KONTO 6100 "Kontorsmateriel och trycksaker (gruppkonto)"
+#SRU 6100 7513
+#KONTO 6110 "Kontorsmateriel"
+#SRU 6110 7513
+#KONTO 6150 "Trycksaker"
+#SRU 6150 7513
+#KONTO 6200 "Tele och post (gruppkonto)"
+#SRU 6200 7513
+#KONTO 6210 "Telekommunikation"
+#SRU 6210 7513
+#KONTO 6211 "Fast telefoni"
+#SRU 6211 7513
+#KONTO 6212 "Mobiltelefon"
+#SRU 6212 7513
+#KONTO 6213 "Mobilsökning"
+#SRU 6213 7513
+#KONTO 6214 "Fax"
+#SRU 6214 7513
+#KONTO 6215 "Telex"
+#SRU 6215 7513
+#KONTO 6230 "Datakommunikation"
+#SRU 6230 7513
+#KONTO 6250 "Postbefordran"
+#SRU 6250 7513
+#KONTO 6300 "Företagsförsäkringar och övriga riskkostnader (gruppkonto)"
+#SRU 6300 7513
+#KONTO 6310 "Företagsförsäkringar"
+#SRU 6310 7513
+#KONTO 6320 "Självrisker vid skada"
+#SRU 6320 7513
+#KONTO 6330 "Förluster i pågående arbeten"
+#SRU 6330 7513
+#KONTO 6340 "Lämnade skadestånd"
+#SRU 6340 7513
+#KONTO 6341 "Lämnade skadestånd, avdragsgilla"
+#SRU 6341 7513
+#KONTO 6342 "Lämnade skadestånd, ej avdragsgilla"
+#SRU 6342 7513
+#KONTO 6350 "Förluster på kundfordringar"
+#SRU 6350 7513
+#KONTO 6351 "Konstaterade förluster på kundfordringar"
+#SRU 6351 7513
+#KONTO 6352 "Befarade förluster på kundfordringar"
+#SRU 6352 7513
+#KONTO 6360 "Garantikostnader"
+#SRU 6360 7513
+#KONTO 6361 "Förändring av garantiavsättning"
+#SRU 6361 7513
+#KONTO 6362 "Faktiska garantikostnader"
+#SRU 6362 7513
+#KONTO 6370 "Kostnader för bevakning och larm"
+#SRU 6370 7513
+#KONTO 6380 "Förluster på övriga kortfristiga fordringar"
+#SRU 6380 7513
+#KONTO 6390 "Övriga riskkostnader"
+#SRU 6390 7513
+#KONTO 6400 "Förvaltningskostnader (gruppkonto)"
+#SRU 6400 7513
+#KONTO 6410 "Styrelsearvoden som inte är lön"
+#SRU 6410 7513
+#KONTO 6420 "Ersättningar till revisor"
+#SRU 6420 7513
+#KONTO 6421 "Revision"
+#SRU 6421 7513
+#KONTO 6422 "Revisonsverksamhet utöver revision"
+#SRU 6422 7513
+#KONTO 6423 "Skatterådgivning - revisor"
+#SRU 6423 7513
+#KONTO 6424 "Övriga tjänster - revisor"
+#SRU 6424 7513
+#KONTO 6430 "Management fees"
+#SRU 6430 7513
+#KONTO 6440 "Årsredovisning och delårsrapporter"
+#SRU 6440 7513
+#KONTO 6450 "Bolagsstämma/års- eller föreningsstämma"
+#SRU 6450 7513
+#KONTO 6490 "Övriga förvaltningskostnader"
+#SRU 6490 7513
+#KONTO 6500 "Övriga externa tjänster (gruppkonto)"
+#SRU 6500 7513
+#KONTO 6510 "Mätningskostnader"
+#SRU 6510 7513
+#KONTO 6520 "Ritnings- och kopieringskostnader"
+#SRU 6520 7513
+#KONTO 6530 "Redovisningstjänster"
+#SRU 6530 7513
+#KONTO 6540 "IT-tjänster"
+#SRU 6540 7513
+#KONTO 6550 "Konsultarvoden"
+#SRU 6550 7513
+#KONTO 6560 "Serviceavgifter till branschorganisationer"
+#SRU 6560 7513
+#KONTO 6570 "Bankkostnader"
+#SRU 6570 7513
+#KONTO 6580 "Advokat- och rättegångskostnader"
+#SRU 6580 7513
+#KONTO 6590 "Övriga externa tjänster"
+#SRU 6590 7513
+#KONTO 6800 "Inhyrd personal (gruppkonto)"
+#SRU 6800 7513
+#KONTO 6810 "Inhyrd produktionspersonal"
+#SRU 6810 7513
+#KONTO 6820 "Inhyrd lagerpersonal"
+#SRU 6820 7513
+#KONTO 6830 "Inhyrd transportpersonal"
+#SRU 6830 7513
+#KONTO 6840 "Inhyrd kontors- och ekonomipersonal"
+#SRU 6840 7513
+#KONTO 6850 "Inhyrd IT-personal"
+#SRU 6850 7513
+#KONTO 6860 "Inhyrd marknads- och försäljningspersonal"
+#SRU 6860 7513
+#KONTO 6870 "Inhyrd restaurang- och butikspersonal"
+#SRU 6870 7513
+#KONTO 6880 "Inhyrda företagsledare"
+#SRU 6880 7513
+#KONTO 6890 "Övrig inhyrd personal"
+#SRU 6890 7513
+#KONTO 6900 "Övriga externa kostnader (gruppkonto)"
+#SRU 6900 7513
+#KONTO 6910 "Licensavgifter och royalties"
+#SRU 6910 7513
+#KONTO 6920 "Kostnader för egna patent"
+#SRU 6920 7513
+#KONTO 6930 "Kostnader för varumärken m.m."
+#SRU 6930 7513
+#KONTO 6940 "Kontroll-, provnings- och stämpelavgifter"
+#SRU 6940 7513
+#KONTO 6950 "Tillsynsavgifter myndigheter"
+#SRU 6950 7513
+#KONTO 6970 "Tidningar, tidskrifter och facklitteratur"
+#SRU 6970 7513
+#KONTO 6980 "Föreningsavgifter"
+#SRU 6980 7513
+#KONTO 6981 "Föreningsavgifter, avdragsgilla"
+#SRU 6981 7513
+#KONTO 6982 "Föreningsavgifter, ej avdragsgilla"
+#SRU 6982 7513
+#KONTO 6990 "Övriga externa kostnader"
+#SRU 6990 7513
+#KONTO 6991 "Övriga externa kostnader, avdragsgilla"
+#SRU 6991 7513
+#KONTO 6992 "Övriga externa kostnader, ej avdragsgilla"
+#SRU 6992 7513
+#KONTO 6993 "Lämnade bidrag och gåvor"
+#SRU 6993 7513
+#KONTO 6996 "Betald utländsk inkomstskatt"
+#SRU 6996 7513
+#KONTO 6997 "Obetald utländsk inkomstskatt"
+#SRU 6997 7513
+#KONTO 6998 "Utländsk moms"
+#SRU 6998 7513
+#KONTO 6999 "Ingående moms, blandad verksamhet"
+#SRU 6999 7513
+#KONTO 7000 "Löner till kollektivanställda (gruppkonto)"
+#SRU 7000 7514
+#KONTO 7010 "Löner till kollektivanställda"
+#SRU 7010 7514
+#KONTO 7011 "Löner till kollektivanställda"
+#SRU 7011 7514
+#KONTO 7012 "Vinstandelar till kollektivanställda"
+#SRU 7012 7514
+#KONTO 7013 "Löner till kollektivanställda under 26 år"
+#SRU 7013 7514
+#KONTO 7014 "Löner till kollektivanställda (nya pensionssystemet)"
+#SRU 7014 7514
+#KONTO 7015 "Löner till kollektivanställda (avgiftsbefriade)"
+#SRU 7015 7514
+#KONTO 7016 "Vinstandelar till kollektivanställda (avgiftsbefriade)"
+#SRU 7016 7514
+#KONTO 7017 "Avgångsvederlag till kollektivanställda"
+#SRU 7017 7514
+#KONTO 7018 "Bruttolöneavdrag, kollektivanställda"
+#SRU 7018 7514
+#KONTO 7019 "Upplupna löner och vinstandelar till kollektivanställda"
+#SRU 7019 7514
+#KONTO 7030 "Löner till kollektivanställda (utlandsanställda)"
+#SRU 7030 7514
+#KONTO 7031 "Löner till kollektivanställda (utlandsanställda)"
+#SRU 7031 7514
+#KONTO 7032 "Vinstandelar till kollektivanställda (utlandsanställda)"
+#SRU 7032 7514
+#KONTO 7033 "Löner till kollektivanställda under 26 år (utlandsanställda)"
+#SRU 7033 7514
+#KONTO 7034 "Löner till kollektivanställda (nya pensionssystemet) (utlandsanställda)"
+#SRU 7034 7514
+#KONTO 7035 "Löner till kollektivanställda (avgiftsbefriade) (utlandsanställda)"
+#SRU 7035 7514
+#KONTO 7036 "Vinstandelar till kollektivanställda (avgiftsbefriade) (utlandsanställda)"
+#SRU 7036 7514
+#KONTO 7037 "Avgångsvederlag till kollektivanställda (utlandsanställda)"
+#SRU 7037 7514
+#KONTO 7038 "Bruttolöneavdrag, kollektivanställda (utlandsanställda)"
+#SRU 7038 7514
+#KONTO 7039 "Upplupna löner och vinstandelar till kollektivanställda (utlandsanställda)"
+#SRU 7039 7514
+#KONTO 7080 "Löner till kollektivanställda för ej arbetad tid"
+#SRU 7080 7514
+#KONTO 7081 "Sjuklöner till kollektivanställda"
+#SRU 7081 7514
+#KONTO 7082 "Semesterlöner till kollektivanställda"
+#SRU 7082 7514
+#KONTO 7083 "Föräldraersättning till kollektivanställda"
+#SRU 7083 7514
+#KONTO 7090 "Förändring av semesterlöneskuld"
+#SRU 7090 7514
+#KONTO 7200 "Löner till tjänstemän och företagsledare (gruppkonto)"
+#SRU 7200 7514
+#KONTO 7210 "Löner till tjänstemän"
+#SRU 7210 7514
+#KONTO 7211 "Löner till tjänstemän"
+#SRU 7211 7514
+#KONTO 7212 "Vinstandelar till tjänstemän"
+#SRU 7212 7514
+#KONTO 7213 "Löner till tjänstemän under 26 år"
+#SRU 7213 7514
+#KONTO 7214 "Löner till tjänstemän (nya pensionssystemet)"
+#SRU 7214 7514
+#KONTO 7215 "Löner till tjänstemän (avgiftsbefriade)"
+#SRU 7215 7514
+#KONTO 7216 "Vinstandelar till tjänstemän (avgiftsbefriade)"
+#SRU 7216 7514
+#KONTO 7217 "Avgångsvederlag till tjänstemän"
+#SRU 7217 7514
+#KONTO 7218 "Bruttolöneavdrag, tjänstemän"
+#SRU 7218 7514
+#KONTO 7219 "Upplupna löner och vinstandelar till tjänstemän"
+#SRU 7219 7514
+#KONTO 7220 "Löner till företagsledare"
+#SRU 7220 7514
+#KONTO 7221 "Löner till företagsledare"
+#SRU 7221 7514
+#KONTO 7222 "Tantiem till företagsledare"
+#SRU 7222 7514
+#KONTO 7223 "Löner till företagsledare under 26 år"
+#SRU 7223 7514
+#KONTO 7224 "Löner till företagsledare (nya pensionssystemet)"
+#SRU 7224 7514
+#KONTO 7225 "Löner till företagsledare (avgiftsbefriade)"
+#SRU 7225 7514
+#KONTO 7227 "Avgångsvederlag till företagsledare"
+#SRU 7227 7514
+#KONTO 7228 "Bruttolöneavdrag, företagsledare"
+#SRU 7228 7514
+#KONTO 7229 "Upplupna löner och tantiem till företagsledare"
+#SRU 7229 7514
+#KONTO 7230 "Löner till tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7230 7514
+#KONTO 7231 "Löner till tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7231 7514
+#KONTO 7232 "Vinstandelar till tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7232 7514
+#KONTO 7233 "Löner till tjänstemän och ftgsledare under 26 år (utlandsanställda)"
+#SRU 7233 7514
+#KONTO 7234 "Löner till tjänstemän och ftgsledare (utlandsanställda) (nya pensionssystemet)"
+#SRU 7234 7514
+#KONTO 7235 "Löner till tjänstemän och ftgsledare (utlandsanställda) (avgiftsbefriade)"
+#SRU 7235 7514
+#KONTO 7236 "Vinstandelar till tjänstemän och ftgsledare (utlandsanställda) (avgiftsbefriade)"
+#SRU 7236 7514
+#KONTO 7237 "Avgångsvederlag till tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7237 7514
+#KONTO 7238 "Bruttolöneavdrag, tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7238 7514
+#KONTO 7239 "Upplupna löner och vinstandelar till tjänstemän och ftgsledare (utlandsanställda)"
+#SRU 7239 7514
+#KONTO 7240 "Styrelsearvoden"
+#SRU 7240 7514
+#KONTO 7280 "Löner till tjänstemän och företagsledare för ej arbetad tid"
+#SRU 7280 7514
+#KONTO 7281 "Sjuklöner till tjänstemän"
+#SRU 7281 7514
+#KONTO 7282 "Sjuklöner till företagsledare"
+#SRU 7282 7514
+#KONTO 7283 "Föräldraersättning till tjänstemän"
+#SRU 7283 7514
+#KONTO 7284 "Föräldraersättning till företagsledare"
+#SRU 7284 7514
+#KONTO 7285 "Semesterlöner till tjänstemän"
+#SRU 7285 7514
+#KONTO 7286 "Semesterlöner till företagsledare"
+#SRU 7286 7514
+#KONTO 7288 "Övriga löner till tjänstemän för ej arbetad tid"
+#SRU 7288 7514
+#KONTO 7289 "Övriga löner till företagsledare för ej arbetad tid"
+#SRU 7289 7514
+#KONTO 7290 "Förändring av semesterlöneskuld"
+#SRU 7290 7514
+#KONTO 7291 "Förändring av semesterlöneskuld till tjänstemän"
+#SRU 7291 7514
+#KONTO 7292 "Förändring av semesterlöneskuld till företagsledare"
+#SRU 7292 7514
+#KONTO 7300 "Kostnadsersättningar och förmåner (gruppkonto)"
+#SRU 7300 7514
+#KONTO 7310 "Kontanta extraersättningar"
+#SRU 7310 7514
+#KONTO 7311 "Ersättningar för sammanträden m.m."
+#SRU 7311 7514
+#KONTO 7312 "Ersättningar för förslagsverksamhet och uppfinningar"
+#SRU 7312 7514
+#KONTO 7313 "Ersättningar för/bidrag till bostadskostnader"
+#SRU 7313 7514
+#KONTO 7314 "Ersättningar för/bidrag till måltidskostnader"
+#SRU 7314 7514
+#KONTO 7315 "Ersättningar för/bidrag till resor till och från arbetsplatsen"
+#SRU 7315 7514
+#KONTO 7316 "Ersättningar för/bidrag till arbetskläder"
+#SRU 7316 7514
+#KONTO 7317 "Ersättningar för/bidrag till arbetsmaterial och arbetsverktyg"
+#SRU 7317 7514
+#KONTO 7318 "Felräkningspengar"
+#SRU 7318 7514
+#KONTO 7319 "Övriga kontanta extraersättningar"
+#SRU 7319 7514
+#KONTO 7320 "Traktamenten vid tjänsteresa"
+#SRU 7320 7514
+#KONTO 7321 "Skattefria traktamenten, Sverige"
+#SRU 7321 7514
+#KONTO 7322 "Skattepliktiga traktamenten, Sverige"
+#SRU 7322 7514
+#KONTO 7323 "Skattefria traktamenten, utlandet"
+#SRU 7323 7514
+#KONTO 7324 "Skattepliktiga traktamenten, utlandet"
+#SRU 7324 7514
+#KONTO 7330 "Bilersättningar"
+#SRU 7330 7514
+#KONTO 7331 "Skattefria bilersättningar"
+#SRU 7331 7514
+#KONTO 7332 "Skattepliktiga bilersättningar"
+#SRU 7332 7514
+#KONTO 7333 "Ersättning för trängselskatt, skattefri"
+#SRU 7333 7514
+#KONTO 7350 "Ersättningar för föreskrivna arbetskläder"
+#SRU 7350 7514
+#KONTO 7370 "Representationsersättningar"
+#SRU 7370 7514
+#KONTO 7380 "Kostnader för förmåner till anställda"
+#SRU 7380 7514
+#KONTO 7381 "Kostnader för fri bostad"
+#SRU 7381 7514
+#KONTO 7382 "Kostnader för fria eller subventionerade måltider"
+#SRU 7382 7514
+#KONTO 7383 "Kostnader för fria resor till och från arbetsplatsen"
+#SRU 7383 7514
+#KONTO 7384 "Kostnader för fria eller subventionerade arbetskläder"
+#SRU 7384 7514
+#KONTO 7385 "Kostnader för fri bil"
+#SRU 7385 7514
+#KONTO 7386 "Subventionerad ränta"
+#SRU 7386 7514
+#KONTO 7387 "Kostnader för lånedatorer"
+#SRU 7387 7514
+#KONTO 7388 "Anställdas ersättning för erhållna förmåner"
+#SRU 7388 7514
+#KONTO 7389 "Övriga kostnader för förmåner"
+#SRU 7389 7514
+#KONTO 7390 "Övriga kostnadsersättningar och förmåner"
+#SRU 7390 7514
+#KONTO 7391 "Kostnad för trängselskatteförmån"
+#SRU 7391 7514
+#KONTO 7392 "Kostnad för förmån av hushållsnära tjänster"
+#SRU 7392 7514
+#KONTO 7399 "Motkonto skattepliktiga förmåner"
+#SRU 7399 7514
+#KONTO 7400 "Pensionskostnader (gruppkonto)"
+#SRU 7400 7514
+#KONTO 7410 "Pensionsförsäkringspremier"
+#SRU 7410 7514
+#KONTO 7411 "Premier för kollektiva pensionsförsäkringar"
+#SRU 7411 7514
+#KONTO 7412 "Premier för individuella pensionsförsäkringar"
+#SRU 7412 7514
+#KONTO 7418 "Återbäring från försäkringsföretag"
+#SRU 7418 7514
+#KONTO 7420 "Förändring av pensionsskuld"
+#SRU 7420 7514
+#KONTO 7421 "Direktpension, ej avdragsgill"
+#SRU 7421 7514
+#KONTO 7430 "Avdrag för räntedel i pensionskostnad"
+#SRU 7430 7514
+#KONTO 7440 "Förändring av pensionsstiftelsekapital"
+#SRU 7440 7514
+#KONTO 7441 "Avsättning till pensionsstiftelse"
+#SRU 7441 7514
+#KONTO 7448 "Gottgörelse från pensionsstiftelse"
+#SRU 7448 7514
+#KONTO 7460 "Pensionsutbetalningar"
+#SRU 7460 7514
+#KONTO 7461 "Pensionsutbetalningar till f.d. kollektivanställda"
+#SRU 7461 7514
+#KONTO 7462 "Pensionsutbetalningar till f.d. tjänstemän"
+#SRU 7462 7514
+#KONTO 7463 "Pensionsutbetalningar till f.d. företagsledare"
+#SRU 7463 7514
+#KONTO 7470 "Förvaltnings- och kreditförsäkringsavgifter"
+#SRU 7470 7514
+#KONTO 7490 "Övriga pensionskostnader"
+#SRU 7490 7514
+#KONTO 7500 "Sociala och andra avgifter enligt lag och avtal (gruppkonto)"
+#SRU 7500 7514
+#KONTO 7510 "Lagstadgade sociala avgifter"
+#SRU 7510 7514
+#KONTO 7511 "Sociala avgifter för löner och ersättningar"
+#SRU 7511 7514
+#KONTO 7512 "Sociala avgifter för förmånsvärden"
+#SRU 7512 7514
+#KONTO 7515 "Sociala avgifter på skattepliktiga kostnadsersättningar"
+#SRU 7515 7514
+#KONTO 7516 "Sociala avgifter på arvoden"
+#SRU 7516 7514
+#KONTO 7518 "Sociala avgifter på bruttolöneavdrag m.m."
+#SRU 7518 7514
+#KONTO 7519 "Sociala avgifter för semester- och löneskulder"
+#SRU 7519 7514
+#KONTO 7520 "Arbetsgivaravgifter (nya pensionssystemet)"
+#SRU 7520 7514
+#KONTO 7521 "Arbetsgivaravgifter för löner och ersättningar (nya pensionssystemet)"
+#SRU 7521 7514
+#KONTO 7522 "Arbetsgivaravgifter för förmånsvärden (nya pensionssystemet)"
+#SRU 7522 7514
+#KONTO 7525 "Arbetsgivaravgifter på skattepliktiga kostnadsersättningar (nya pensionssystemet)"
+#SRU 7525 7514
+#KONTO 7526 "Arbetsgivaravgifter på arvoden (nya pensionssystemet)"
+#SRU 7526 7514
+#KONTO 7528 "Arbetsgivaravgifter på bruttolöneavdrag m.m. (nya pensionssystemet)"
+#SRU 7528 7514
+#KONTO 7529 "Arbetsgivaravgifter för semester- och löneskulder (nya pensionssystemet)"
+#SRU 7529 7514
+#KONTO 7530 "Särskild löneskatt"
+#SRU 7530 7514
+#KONTO 7531 "Särskild löneskatt för vissa försäkringsersättningar m.m."
+#SRU 7531 7514
+#KONTO 7532 "Särskild löneskatt pensionskostnader, deklarationspost"
+#SRU 7532 7514
+#KONTO 7533 "Särskild löneskatt för pensionskostnader"
+#SRU 7533 7514
+#KONTO 7550 "Avkastningsskatt på pensionsmedel"
+#SRU 7550 7514
+#KONTO 7560 "Arbetsgivaravgifter under 26 år"
+#SRU 7560 7514
+#KONTO 7570 "Premier för arbetsmarknadsförsäkringar"
+#SRU 7570 7514
+#KONTO 7571 "Arbetsmarknadsförsäkringar"
+#SRU 7571 7514
+#KONTO 7572 "Arbetsmarknadsförsäkringar pensionsförsäkringspremier, deklarationspost"
+#SRU 7572 7514
+#KONTO 7580 "Gruppförsäkringspremier"
+#SRU 7580 7514
+#KONTO 7581 "Grupplivförsäkringspremier"
+#SRU 7581 7514
+#KONTO 7582 "Gruppsjukförsäkringspremier"
+#SRU 7582 7514
+#KONTO 7583 "Gruppolycksfallsförsäkringspremier"
+#SRU 7583 7514
+#KONTO 7589 "Övriga gruppförsäkringspremier"
+#SRU 7589 7514
+#KONTO 7590 "Övriga sociala och andra avgifter enligt lag och avtal"
+#SRU 7590 7514
+#KONTO 7600 "Övriga personalkostnader (gruppkonto)"
+#SRU 7600 7514
+#KONTO 7610 "Utbildning"
+#SRU 7610 7514
+#KONTO 7620 "Sjuk- och hälsovård"
+#SRU 7620 7514
+#KONTO 7621 "Sjuk- och hälsovård, avdragsgill"
+#SRU 7621 7514
+#KONTO 7622 "Sjuk- och hälsovård, ej avdragsgill"
+#SRU 7622 7514
+#KONTO 7623 "Sjukvårdsförsäkring, ej avdragsgill"
+#SRU 7623 7514
+#KONTO 7630 "Personalrepresentation"
+#SRU 7630 7514
+#KONTO 7631 "Personalrepresentation, avdragsgill"
+#SRU 7631 7514
+#KONTO 7632 "Personalrepresentation, ej avdragsgill"
+#SRU 7632 7514
+#KONTO 7650 "Sjuklöneförsäkring"
+#SRU 7650 7514
+#KONTO 7670 "Förändring av personalstiftelsekapital"
+#SRU 7670 7514
+#KONTO 7671 "Avsättning till personalstiftelse"
+#SRU 7671 7514
+#KONTO 7678 "Gottgörelse från personalstiftelse"
+#SRU 7678 7514
+#KONTO 7690 "Övriga personalkostnader"
+#SRU 7690 7514
+#KONTO 7691 "Personalrekrytering"
+#SRU 7691 7514
+#KONTO 7692 "Begravningshjälp"
+#SRU 7692 7514
+#KONTO 7693 "Fritidsverksamhet"
+#SRU 7693 7514
+#KONTO 7699 "Övriga personalkostnader"
+#SRU 7699 7514
+#KONTO 7710 "Nedskrivningar av immateriella anläggningstillgångar"
+#SRU 7710 7515
+#KONTO 7720 "Nedskrivningar av byggnader och mark"
+#SRU 7720 7515
+#KONTO 7730 "Nedskrivningar av maskiner och inventarier"
+#SRU 7730 7515
+#KONTO 7740 "Nedskrivningar av vissa omsättningstillgångar"
+#SRU 7740 7516
+#KONTO 7760 "Återföring av nedskrivningar av immateriella anläggningstillgångar"
+#SRU 7760 7515
+#KONTO 7770 "Återföring av nedskrivningar av byggnader och mark"
+#SRU 7770 7515
+#KONTO 7780 "Återföring av nedskrivningar av maskiner och inventarier"
+#SRU 7780 7515
+#KONTO 7790 "Återföring av nedskrivningar av vissa omsättningstillgångar"
+#SRU 7790 7516
+#KONTO 7810 "Avskrivningar på immateriella anläggningstillgångar"
+#SRU 7810 7515
+#KONTO 7811 "Avskrivningar på balanserade utgifter"
+#SRU 7811 7515
+#KONTO 7812 "Avskrivningar på koncessioner m.m."
+#SRU 7812 7515
+#KONTO 7813 "Avskrivningar på patent"
+#SRU 7813 7515
+#KONTO 7814 "Avskrivningar på licenser"
+#SRU 7814 7515
+#KONTO 7815 "Avskrivningar på varumärken"
+#SRU 7815 7515
+#KONTO 7816 "Avskrivningar på hyresrätter"
+#SRU 7816 7515
+#KONTO 7817 "Avskrivningar på goodwill"
+#SRU 7817 7515
+#KONTO 7819 "Avskrivningar på övriga immateriella anläggningstillgångar"
+#SRU 7819 7515
+#KONTO 7820 "Avskrivningar på byggnader och markanläggningar"
+#SRU 7820 7515
+#KONTO 7821 "Avskrivningar på byggnader"
+#SRU 7821 7515
+#KONTO 7824 "Avskrivningar på markanläggningar"
+#SRU 7824 7515
+#KONTO 7829 "Avskrivningar på övriga byggnader"
+#SRU 7829 7515
+#KONTO 7830 "Avskrivningar på maskiner och inventarier"
+#SRU 7830 7515
+#KONTO 7831 "Avskrivningar på maskiner och andra tekniska anläggningar"
+#SRU 7831 7515
+#KONTO 7832 "Avskrivningar på inventarier och verktyg"
+#SRU 7832 7515
+#KONTO 7833 "Avskrivningar på installationer"
+#SRU 7833 7515
+#KONTO 7834 "Avskrivningar på bilar och andra transportmedel"
+#SRU 7834 7515
+#KONTO 7835 "Avskrivningar på datorer"
+#SRU 7835 7515
+#KONTO 7836 "Avskrivningar på leasade tillgångar"
+#SRU 7836 7515
+#KONTO 7839 "Avskrivningar på övriga maskiner och inventarier"
+#SRU 7839 7515
+#KONTO 7840 "Avskrivningar på förbättringsutgifter på annans fastighet"
+#SRU 7840 7515
+#KONTO 7940 "Orealiserade positiva/negativa värdeförändringar på säkringsinstrument"
+#SRU 7940 7517
+#KONTO 7960 "Valutakursförluster på fordringar och skulder av rörelsekaraktär"
+#SRU 7960 7517
+#KONTO 7970 "Förlust vid avyttring av immateriella och materiella anläggningstillgångar"
+#SRU 7970 7517
+#KONTO 7971 "Förlust vid avyttring av immateriella anläggningstillgångar"
+#SRU 7971 7517
+#KONTO 7972 "Förlust vid avyttring av byggnader och mark"
+#SRU 7972 7517
+#KONTO 7973 "Förlust vid avyttring av maskiner och inventarier"
+#SRU 7973 7517
+#KONTO 7990 "Övriga rörelsekostnader"
+#SRU 7990 7517
+#KONTO 8010 "Utdelning på andelar i koncernföretag"
+#SRU 8010 7414
+#KONTO 8012 "Utdelning på andelar i dotterföretag"
+#SRU 8012 7414
+#KONTO 8013 "Utdelning på andelar i andra koncernföretag"
+#SRU 8013 7414
+#KONTO 8014 "Koncernbidrag"
+#SRU 8014 7414
+#KONTO 8016 "Insatsemission, koncernföretag"
+#SRU 8016 7414
+#KONTO 8019 "Övriga utdelningar på andelar i koncernföretag"
+#SRU 8019 7414
+#KONTO 8020 "Resultat vid försäljning av andelar i koncernföretag"
+#SRU 8020 7414
+#KONTO 8022 "Resultat vid försäljning av andelar i dotterföretag"
+#SRU 8022 7414
+#KONTO 8023 "Resultat vid försäljning av andelar i andra koncernföretag"
+#SRU 8023 7414
+#KONTO 8030 "Resultatandelar från handelsbolag (dotterföretag)"
+#SRU 8030 7414
+#KONTO 8070 "Nedskrivningar av andelar i och långfristiga fordringar hos koncernföretag"
+#SRU 8070 7521
+#KONTO 8072 "Nedskrivningar av andelar i dotterföretag"
+#SRU 8072 7521
+#KONTO 8073 "Nedskrivningar av andelar i andra koncernföretag"
+#SRU 8073 7521
+#KONTO 8076 "Nedskrivningar av långfristiga fordringar hos moderföretag"
+#SRU 8076 7521
+#KONTO 8077 "Nedskrivningar av långfristiga fordringar hos dotterföretag"
+#SRU 8077 7521
+#KONTO 8078 "Nedskrivningar av långfristiga fordringar hos andra koncernföretag"
+#SRU 8078 7521
+#KONTO 8080 "Återföringar av nedskrivningar av andelar i och långfristiga fordringar hos koncernföretag"
+#SRU 8080 7521
+#KONTO 8082 "Återföringar av nedskrivningar av andelar i dotterföretag"
+#SRU 8082 7521
+#KONTO 8083 "Återföringar av nedskrivningar av andelar i andra koncernföretag"
+#SRU 8083 7521
+#KONTO 8086 "Återföringar av nedskrivningar av långfristiga fordringar hos moderföretag"
+#SRU 8086 7521
+#KONTO 8087 "Återföringar av nedskrivningar av långfristiga fordringar hos dotterföretag"
+#SRU 8087 7521
+#KONTO 8088 "Återföringar av nedskrivningar av långfristiga fordringar hos andra koncernföretag"
+#SRU 8088 7521
+#KONTO 8110 "Utdelning på andelar i intresseföretag"
+#SRU 8110 7415
+#KONTO 8112 "Utdelningar från intresseföretag"
+#SRU 8112 7415
+#KONTO 8116 "Insatsemission, intresseföretag"
+#SRU 8116 7415
+#KONTO 8120 "Resultat vid försäljning av andelar i intresseföretag"
+#SRU 8120 7415
+#KONTO 8130 "Resultatandelar från handelsbolag (intresseföretag)"
+#SRU 8130 7415
+#KONTO 8170 "Nedskrivningar av andelar i och långfristiga fordringar hos intresseföretag"
+#SRU 8170 7521
+#KONTO 8171 "Nedskrivningar av andelar i intresseföretag"
+#SRU 8171 7521
+#KONTO 8172 "Nedskrivningar av långfristiga fordringar hos intresseföretag"
+#SRU 8172 7521
+#KONTO 8180 "Återföringar av nedskrivningar av andelar i och långfristiga fordringar hos intresseföretag"
+#SRU 8180 7521
+#KONTO 8181 "Återföringar av nedskrivningar av andelar i intresseföretag"
+#SRU 8181 7521
+#KONTO 8182 "Återföringar av nedskrivningar av långfristiga fordringar hos intresseföretag"
+#SRU 8182 7521
+#KONTO 8210 "Utdelningar på andelar i andra företag"
+#SRU 8210 7416
+#KONTO 8212 "Utdelningar, övriga företag"
+#SRU 8212 7416
+#KONTO 8216 "Insatsemissioner, övriga företag"
+#SRU 8216 7416
+#KONTO 8220 "Resultat vid försäljning av värdepapper i och långfristiga fordringar hos andra företag"
+#SRU 8220 7416
+#KONTO 8221 "Resultat vid försäljning av andelar i andra företag"
+#SRU 8221 7416
+#KONTO 8222 "Resultat vid försäljning av långfristiga fordringar hos andra företag"
+#SRU 8222 7416
+#KONTO 8223 "Resultat vid försäljning av derivat (långfristiga värdepappersinnehav)"
+#SRU 8223 7416
+#KONTO 8230 "Valutakursdifferenser på långfristiga fordringar"
+#SRU 8230 7416
+#KONTO 8231 "Valutakursvinster på långfristiga fordringar"
+#SRU 8231 7416
+#KONTO 8236 "Valutakursförluster på långfristiga fordringar"
+#SRU 8236 7416
+#KONTO 8240 "Resultatandelar från handelsbolag (andra företag)"
+#SRU 8240 7416
+#KONTO 8250 "Ränteintäkter från långfristiga fordringar hos och värdepapper i andra företag"
+#SRU 8250 7416
+#KONTO 8251 "Ränteintäkter från långfristiga fordringar"
+#SRU 8251 7416
+#KONTO 8252 "Ränteintäkter från övriga värdepapper"
+#SRU 8252 7416
+#KONTO 8254 "Skattefria ränteintäkter, långfristiga tillgångar"
+#SRU 8254 7416
+#KONTO 8260 "Ränteintäkter från långfristiga fordringar hos koncernföretag"
+#SRU 8260 7416
+#KONTO 8261 "Ränteintäkter från långfristiga fordringar hos moderföretag"
+#SRU 8261 7416
+#KONTO 8262 "Ränteintäkter från långfristiga fordringar hos dotterföretag"
+#SRU 8262 7416
+#KONTO 8263 "Ränteintäkter från långfristiga fordringar hos andra koncernföretag"
+#SRU 8263 7416
+#KONTO 8270 "Nedskrivningar av innehav av andelar i och långfristiga fordringar hos andra företag"
+#SRU 8270 7521
+#KONTO 8271 "Nedskrivningar av andelar i andra företag"
+#SRU 8271 7521
+#KONTO 8272 "Nedskrivningar av långfristiga fordringar hos andra företag"
+#SRU 8272 7521
+#KONTO 8273 "Nedskrivningar av övriga värdepapper hos andra företag"
+#SRU 8273 7521
+#KONTO 8280 "Återföringar av nedskrivningar av andelar i och långfristiga fordringar hos andra företag"
+#SRU 8280 7521
+#KONTO 8281 "Återföringar av nedskrivningar av andelar i andra företag"
+#SRU 8281 7521
+#KONTO 8282 "Återföringar av nedskrivningar av långfristiga fordringar hos andra företag"
+#SRU 8282 7521
+#KONTO 8283 "Återföringar av nedskrivningar av övriga värdepapper i andra företag"
+#SRU 8283 7521
+#KONTO 8290 "Värdering till verkligt värde, anläggningstillgångar"
+#SRU 8290 7416
+#KONTO 8291 "Orealiserade värdeförändringar på anläggningstillgångar"
+#SRU 8291 7416
+#KONTO 8295 "Orealiserade värdeförändringar på derivatinstrument"
+#SRU 8295 7416
+#KONTO 8310 "Ränteintäkter från omsättningstillgångar"
+#SRU 8310 7417
+#KONTO 8311 "Ränteintäkter från bank"
+#SRU 8311 7417
+#KONTO 8312 "Ränteintäkter från kortfristiga placeringar"
+#SRU 8312 7417
+#KONTO 8313 "Ränteintäkter från kortfristiga fordringar"
+#SRU 8313 7417
+#KONTO 8314 "Skattefria ränteintäkter"
+#SRU 8314 7417
+#KONTO 8317 "Ränteintäkter för dold räntekompensation"
+#SRU 8317 7417
+#KONTO 8319 "Övriga ränteintäkter från omsättningstillgångar"
+#SRU 8319 7417
+#KONTO 8320 "Värdering till verkligt värde, omsättningstillgångar"
+#SRU 8320 7417
+#KONTO 8321 "Orealiserade värdeförändringar på omsättningstillgångar"
+#SRU 8321 7417
+#KONTO 8325 "Orealiserade värdeförändringar på derivatinstrument (oms.-tillg.)"
+#SRU 8325 7417
+#KONTO 8330 "Valutakursdifferenser på kortfristiga fordringar och placeringar"
+#SRU 8330 7417
+#KONTO 8331 "Valutakursvinster på kortfristiga fordringar och placeringar"
+#SRU 8331 7417
+#KONTO 8336 "Valutakursförluster på kortfristiga fordringar och placeringar"
+#SRU 8336 7417
+#KONTO 8340 "Utdelningar på kortfristiga placeringar"
+#SRU 8340 7417
+#KONTO 8350 "Resultat vid försäljning av kortfristiga placeringar"
+#SRU 8350 7417
+#KONTO 8360 "Övriga ränteintäkter från koncernföretag"
+#SRU 8360 7417
+#KONTO 8361 "Övriga ränteintäkter från moderföretag"
+#SRU 8361 7417
+#KONTO 8362 "Övriga ränteintäkter från dotterföretag"
+#SRU 8362 7417
+#KONTO 8363 "Övriga ränteintäkter från andra koncernföretag"
+#SRU 8363 7417
+#KONTO 8370 "Nedskrivningar av kortfristiga placeringar"
+#SRU 8370 7521
+#KONTO 8380 "Återföringar av nedskrivningar av kortfristiga placeringar"
+#SRU 8380 7521
+#KONTO 8390 "Övriga finansiella intäkter"
+#SRU 8390 7417
+#KONTO 8400 "Räntekostnader (gruppkonto)"
+#SRU 8400 7522
+#KONTO 8410 "Räntekostnader för långfristiga skulder"
+#SRU 8410 7522
+#KONTO 8411 "Räntekostnader för obligations-, förlags- och konvertibla lån"
+#SRU 8411 7522
+#KONTO 8412 "Räntedel i årets pensionskostnad"
+#SRU 8412 7522
+#KONTO 8413 "Räntekostnader för checkräkningskredit"
+#SRU 8413 7522
+#KONTO 8414 "Räntekostnader för byggnadskreditiv"
+#SRU 8414 7522
+#KONTO 8415 "Räntekostnader för andra skulder till kreditinstitut"
+#SRU 8415 7522
+#KONTO 8417 "Räntekostnader för dold räntekompensation m.m."
+#SRU 8417 7522
+#KONTO 8418 "Avdragspost för räntesubventioner"
+#SRU 8418 7522
+#KONTO 8419 "Övriga räntekostnader för långfristiga skulder"
+#SRU 8419 7522
+#KONTO 8420 "Räntekostnader för kortfristiga skulder"
+#SRU 8420 7522
+#KONTO 8421 "Räntekostnader till kreditinstitut"
+#SRU 8421 7522
+#KONTO 8422 "Dröjsmålsräntor för leverantörsskulder"
+#SRU 8422 7522
+#KONTO 8423 "Räntekostnader för skatter och avgifter"
+#SRU 8423 7522
+#KONTO 8429 "Övriga räntekostnader för kortfristiga skulder"
+#SRU 8429 7522
+#KONTO 8430 "Valutakursdifferenser på skulder"
+#SRU 8430 7522
+#KONTO 8431 "Valutakursvinster på skulder"
+#SRU 8431 7522
+#KONTO 8436 "Valutakursförluster på skulder"
+#SRU 8436 7522
+#KONTO 8440 "Erhållna räntebidrag"
+#SRU 8440 7522
+#KONTO 8450 "Orealiserade värdeförändringar på skulder"
+#SRU 8450 7522
+#KONTO 8451 "Orealiserade värdeförändringar på skulder"
+#SRU 8451 7522
+#KONTO 8455 "Orealiserade värdeförändringar på säkringsinstrument"
+#SRU 8455 7522
+#KONTO 8460 "Räntekostnader till koncernföretag"
+#SRU 8460 7522
+#KONTO 8461 "Räntekostnader till moderföretag"
+#SRU 8461 7522
+#KONTO 8462 "Räntekostnader till dotterföretag"
+#SRU 8462 7522
+#KONTO 8463 "Räntekostnader till andra koncernföretag"
+#SRU 8463 7522
+#KONTO 8480 "Aktiverade ränteutgifter"
+#SRU 8480 7522
+#KONTO 8490 "Övriga skuldrelaterade poster"
+#SRU 8490 7522
+#KONTO 8491 "Erhållet ackord på skulder till kreditinstitut m.m."
+#SRU 8491 7522
+#KONTO 8710 "Extraordinära intäkter"
+#KONTO 8750 "Extraordinära kostnader"
+#KONTO 8810 "Förändring av periodiseringsfond"
+#SRU 8810 7525
+#KONTO 8811 "Avsättning till periodiseringsfond"
+#SRU 8811 7525
+#KONTO 8819 "Återföring från periodiseringsfond"
+#SRU 8819 7525
+#KONTO 8820 "Mottagna koncernbidrag"
+#SRU 8820 7419
+#KONTO 8830 "Lämnade koncernbidrag"
+#SRU 8830 7524
+#KONTO 8840 "Lämnade gottgörelser"
+#SRU 8840 7422
+#KONTO 8850 "Förändring av överavskrivningar"
+#SRU 8850 7421
+#KONTO 8851 "Förändring av överavskrivningar, immateriella anläggningstillgångar"
+#SRU 8851 7421
+#KONTO 8852 "Förändring av överavskrivningar, byggnader och markanläggningar"
+#SRU 8852 7421
+#KONTO 8853 "Förändring av överavskrivningar, maskiner och inventarier"
+#SRU 8853 7421
+#KONTO 8860 "Förändring av ersättningsfond"
+#SRU 8860 7422
+#KONTO 8861 "Avsättning till ersättningsfond för inventarier"
+#SRU 8861 7422
+#KONTO 8862 "Avsättning till ersättningsfond för byggnader och markanläggningar"
+#SRU 8862 7422
+#KONTO 8863 "Avsättning till ersättningsfond för mark"
+#SRU 8863 7422
+#KONTO 8864 "Avsättning till ersättningsfond för djurlager i jordbruk och renskötsel"
+#SRU 8864 7422
+#KONTO 8865 "Ianspråktagande av ersättningsfond för avskrivningar"
+#SRU 8865 7422
+#KONTO 8866 "Ianspråktagande av ersättningsfond för annat än avskrivningar"
+#SRU 8866 7422
+#KONTO 8869 "Återföring från ersättningsfond"
+#SRU 8869 7422
+#KONTO 8880 "Förändring av obeskattade intäkter"
+#SRU 8880 7422
+#KONTO 8881 "Avsättning till upphovsmannakonto"
+#SRU 8881 7422
+#KONTO 8882 "Återföring från upphovsmannakonto"
+#SRU 8882 7422
+#KONTO 8885 "Avsättning till skogskonto"
+#SRU 8885 7422
+#KONTO 8886 "Återföring från skogskonto"
+#SRU 8886 7422
+#KONTO 8890 "Övriga bokslutsdispositioner"
+#SRU 8890 7422
+#KONTO 8891 "Förändring av skillnad mellan bokförd och faktisk pensionsskuld"
+#SRU 8891 7422
+#KONTO 8892 "Nedskrivningar av konsolideringskaraktär av anläggningstillgångar"
+#SRU 8892 7422
+#KONTO 8896 "Förändring av lagerreserv"
+#SRU 8896 7422
+#KONTO 8899 "Övriga bokslutsdispositioner"
+#SRU 8899 7422
+#KONTO 8910 "Skatt som belastar årets resultat"
+#SRU 8910 7528
+#KONTO 8920 "Skatt på grund av ändrad beskattning"
+#SRU 8920 7528
+#KONTO 8930 "Restituerad skatt"
+#SRU 8930 7528
+#KONTO 8940 "Uppskjuten skatt"
+#SRU 8940 7528
+#KONTO 8980 "Övriga skatter"
+#SRU 8980 7528
+#KONTO 8990 "Resultat"
+#SRU 8990 7450
+#KONTO 8999 "Årets resultat"
+#SRU 8999 7450
+#UB 0 1312 0.00
+#UB 0 1930 0.00
+#UB 0 2081 0.00
+#UB 0 2092 0.00
+#UB 0 2099 0.00
+#UB 0 2640 0.00
+#RES 0 6550 0.00
+#RES 0 6570 0.00
+#RES 0 6991 0.00
+#RES 0 6992 0.00
+#RES 0 8999 .20
+#VER "V" "1" 20200101 "INSÄTTNING - Aktiekapital" 20200102
+{
+	#TRANS 1930 {} 25000.00
+	#TRANS 2081 {} -25000.00
+}
+#VER "V" "2" 20200105 "Banktjänster" 20200106
+{
+	#TRANS 1930 {} -635.00
+	#TRANS 6570 {} 635.00
+}
