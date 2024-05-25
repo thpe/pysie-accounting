@@ -1,5 +1,5 @@
 """ tests for pysie """
-import pysie_accounting.pysie as pysie
+from pysie_accounting import pysie
 
 def test_read():
     """ test file read """
