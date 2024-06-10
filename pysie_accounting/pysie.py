@@ -21,6 +21,7 @@ class PySIE:
         self.sru = None
         self.dfrar = None
         self.dfub = None
+        self.dfib = None
         self.dfres = None
         self.verifikat = None
         self.sie_encoding = 'utf8'#"CP437"
@@ -50,6 +51,11 @@ class PySIE:
                 name = row[2]
                 fil.write(f'#KONTO {konto} "{name}"\n')
                 fil.write(f'#SRU {konto} {sru}\n')
+            for row in self.dfib.itertuples():
+                year = row.Year
+                konto = row.Konto
+                balance = row.Balance
+                fil.write(f'#IB {year} {konto} {balance:.2f}\n')
             for row in self.dfub.itertuples():
                 year = row.Year
                 konto = row.Konto
@@ -61,7 +67,7 @@ class PySIE:
                 balance = row.Balance
                 fil.write(f'#RES {year} {konto} {balance:.2f}\n')
             for key,value in self.verifikat.items():
-                fil.write(f'#VER "V" "{key}" {value[0]} {value[1]} {value[2]}\n')
+                fil.write(f'#VER "V" "{key}" {value[0]} "{value[1]}" {value[2]}\n')
                 fil.write('{\n')
                 for line in value[3]:
                     fil.write(f'\t#TRANS {line[0]} ')
@@ -90,19 +96,12 @@ class PySIE:
 
         re_orgnr  = re.compile(r'#ORGNR (\d+)')
         re_fnamn  = re.compile(r'#FNAMN "(.*)"')
-<<<<<<< Updated upstream
-        re_sru  = re.compile(r'#SRU (\d+) (\d+)')
-        re_name = re.compile(r'#KONTO (\d+) "(.*)"')
-        re_ub   = re.compile(r'#UB (-?\d+) (\d+) (-?\d+\.\d+)')
-        re_res  = re.compile(r'#RES (-?\d+) (\d+) (-?\d+\.\d+)')
-=======
         re_sru    = re.compile(r'#SRU (\d+) (\d+)')
         re_name   = re.compile(r'#KONTO (\d+) "(.*)"')
         re_rar    = re.compile(r'#RAR (-?\d+) (\d+) (\d+)')
         re_ib     = re.compile(r'#IB (-?\d+) (\d+) (-?\d+\.\d+)')
         re_ub     = re.compile(r'#UB (-?\d+) (\d+) (-?\d+\.\d+)')
         re_res    = re.compile(r'#RES (-?\d+) (\d+) (-?\d+\.\d+)')
->>>>>>> Stashed changes
         re_verif  = re.compile(r'#VER "(.*)" "(\d+)" (\d+) "(.*)" (\d+)')
         re_trans  = re.compile(r'#TRANS (\d+) {(.*)} (-?\d+.?\d*)')
 
@@ -110,6 +109,7 @@ class PySIE:
         df2   = pd.DataFrame(columns=['Konto', 'Name'])
         dfrar = pd.DataFrame(columns=['Year', 'Start', 'Stop'])
         dfub  = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
+        dfib  = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
         dfres = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
         self.verifikat = {}
         state_trans = False
@@ -150,8 +150,6 @@ class PySIE:
                            'Balance': float(rematch.group(3))}
                     dfrow = pd.DataFrame(dfrow, index=[0])
                     dfub = pd.concat([dfub, dfrow], ignore_index=True)
-<<<<<<< Updated upstream
-=======
 
                 # incoming balance
                 rematch = re_ib.search(row)
@@ -162,7 +160,6 @@ class PySIE:
                     dfrow = pd.DataFrame(dfrow, index=[0])
                     dfib = pd.concat([dfib, dfrow], ignore_index=True)
 
->>>>>>> Stashed changes
                 rematch = re_res.search(row)
                 if rematch:
                     dfrow = {'Year': rematch.group(1),
@@ -213,6 +210,10 @@ class PySIE:
         dfub = dfub.merge(right=self.dftrans, on=['SRU'])
         print(dfub)
         self.dfub = dfub
+        dfib = dfib.merge(right=dfm, on=['Konto'])
+        dfib = dfib.merge(right=self.dftrans, on=['SRU'])
+        print(dfib)
+        self.dfib = dfib
         dfres = dfres.merge(right=dfm, on=['Konto'])
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
         print(dfres)
