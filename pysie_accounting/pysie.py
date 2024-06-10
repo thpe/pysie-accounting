@@ -13,15 +13,13 @@ class PySIE:
         self.flagga = 0
         self.program = "\"pysie-accounting\" 0.1"
         self.sietyp = 4
-        self.rar_nr = 0
-        self.rar_start = 0
-        self.rar_stop = 0
         self.format = 'PC8'
         self.orgnr = '1234'
         self.fnamn = 'AB'
         self.dftrans = None
         self.filename = None
         self.sru = None
+        self.dfrar = None
         self.dfub = None
         self.dfres = None
         self.verifikat = None
@@ -40,7 +38,11 @@ class PySIE:
             fil.write('#SIETYP 4\n')
             fil.write(f'#ORGNR {self.orgnr}\n')
             fil.write(f'#FNAMN "{self.fnamn}"\n')
-            fil.write(f'#RAR {self.rar_nr} {self.rar_start} {self.rar_stop}\n')
+            for row in self.dfrar.itertuples():
+                year = row.Year
+                start = int(row.Start)
+                stop = int(row.Stop)
+                fil.write(f'#RAR {year} {start} {stop}\n')
             fil.write(f'#KPTYP {self.kontoplan}\n')
             for row in self.sru.itertuples():
                 konto = row[0]
@@ -88,15 +90,25 @@ class PySIE:
 
         re_orgnr  = re.compile(r'#ORGNR (\d+)')
         re_fnamn  = re.compile(r'#FNAMN "(.*)"')
+<<<<<<< Updated upstream
         re_sru  = re.compile(r'#SRU (\d+) (\d+)')
         re_name = re.compile(r'#KONTO (\d+) "(.*)"')
         re_ub   = re.compile(r'#UB (-?\d+) (\d+) (-?\d+\.\d+)')
         re_res  = re.compile(r'#RES (-?\d+) (\d+) (-?\d+\.\d+)')
+=======
+        re_sru    = re.compile(r'#SRU (\d+) (\d+)')
+        re_name   = re.compile(r'#KONTO (\d+) "(.*)"')
+        re_rar    = re.compile(r'#RAR (-?\d+) (\d+) (\d+)')
+        re_ib     = re.compile(r'#IB (-?\d+) (\d+) (-?\d+\.\d+)')
+        re_ub     = re.compile(r'#UB (-?\d+) (\d+) (-?\d+\.\d+)')
+        re_res    = re.compile(r'#RES (-?\d+) (\d+) (-?\d+\.\d+)')
+>>>>>>> Stashed changes
         re_verif  = re.compile(r'#VER "(.*)" "(\d+)" (\d+) "(.*)" (\d+)')
         re_trans  = re.compile(r'#TRANS (\d+) {(.*)} (-?\d+.?\d*)')
 
         df1   = pd.DataFrame(columns=['Konto', 'SRU'])
         df2   = pd.DataFrame(columns=['Konto', 'Name'])
+        dfrar = pd.DataFrame(columns=['Year', 'Start', 'Stop'])
         dfub  = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
         dfres = pd.DataFrame(columns=['Year', 'Konto', 'Balance'])
         self.verifikat = {}
@@ -120,6 +132,17 @@ class PySIE:
                     dfrow = pd.DataFrame({'Konto': int(rematch.group(1)),
                                         'Name': rematch.group(2)}, index=[0])
                     df2 = pd.concat([df2, dfrow], ignore_index=True)
+
+                # years
+                rematch = re_rar.search(row)
+                if rematch:
+                    dfrow = {'Year': rematch.group(1),
+                           'Start': int(rematch.group(2)),
+                           'Stop': float(rematch.group(3))}
+                    dfrow = pd.DataFrame(dfrow, index=[0])
+                    dfrar = pd.concat([dfrar, dfrow], ignore_index=True)
+
+                # outgoing balance
                 rematch = re_ub.search(row)
                 if rematch:
                     dfrow = {'Year': rematch.group(1),
@@ -127,6 +150,19 @@ class PySIE:
                            'Balance': float(rematch.group(3))}
                     dfrow = pd.DataFrame(dfrow, index=[0])
                     dfub = pd.concat([dfub, dfrow], ignore_index=True)
+<<<<<<< Updated upstream
+=======
+
+                # incoming balance
+                rematch = re_ib.search(row)
+                if rematch:
+                    dfrow = {'Year': rematch.group(1),
+                           'Konto': int(rematch.group(2)),
+                           'Balance': float(rematch.group(3))}
+                    dfrow = pd.DataFrame(dfrow, index=[0])
+                    dfib = pd.concat([dfib, dfrow], ignore_index=True)
+
+>>>>>>> Stashed changes
                 rematch = re_res.search(row)
                 if rematch:
                     dfrow = {'Year': rematch.group(1),
@@ -169,6 +205,10 @@ class PySIE:
         print('SIE matching')
         print(dfm)
         self.sru = dfm.copy()
+        # RAR
+        print(dfrar)
+        self.dfrar = dfrar
+
         dfub = dfub.merge(right=dfm, on=['Konto'])
         dfub = dfub.merge(right=self.dftrans, on=['SRU'])
         print(dfub)
