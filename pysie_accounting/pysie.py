@@ -4,6 +4,7 @@ from datetime import datetime
 import pandas as pd
 
 def is_int(x):
+    """ returns true if value is int """
     success = True
     try:
         int(x)
@@ -227,15 +228,18 @@ class PySIE:
         self.dfres = dfres
         print(self.verifikat)
     def shift_year(self, df):
+        """ shfit the given dataframe by one year """
         rest = df.loc[df['Year'] == '0'].copy(deep=True)
         df['Year'] = df['Year'].apply(lambda x: int(x) - 1)
         df = pd.concat([rest, df], ignore_index=True)
         return df
 
     def new_year(self):
+        """ initialize a new year """
         self.dfrar['Year'] = self.dfrar['Year'].apply(lambda x: int(x) - 1)
         self.dfrar.index = self.dfrar.index + 1
-        self.dfrar = pd.concat([pd.DataFrame([[0,self.dfrar.loc[1]['Start']+10000, self.dfrar.loc[1]['Stop']+10000]],
+        self.dfrar = pd.concat([pd.DataFrame([[0,self.dfrar.loc[1]['Start']+10000,
+                                                 self.dfrar.loc[1]['Stop'] +10000]],
                                columns=self.dfrar.columns), self.dfrar], ignore_index=True)
         self.dfub  = self.shift_year(self.dfub)
         self.dfib  = self.shift_year(self.dfib)
