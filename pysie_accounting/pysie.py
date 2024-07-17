@@ -3,6 +3,15 @@ import re
 from datetime import datetime
 import pandas as pd
 
+def is_int(x):
+    success = True
+    try:
+        int(x)
+    except ValueError:
+        success = False
+    print(f'{x} is int')
+    return success
+
 
 class PySIE:
     """ class for handling SIE data """
@@ -219,3 +228,18 @@ class PySIE:
         print(dfres)
         self.dfres = dfres
         print(self.verifikat)
+    def new_year(self):
+        #self.dfib['Year'] = self.dfib['Year'] - 1
+        #self.dfib['Year'].apply(l
+        #.columns = [int(x) - 1 if is_int(x) else x for x in self.dfib.columns]
+        print(self.dfrar)
+#        for row in self.dfrar.itertuples():
+#            row.Year  = int(row.Year) - 1
+        self.dfrar['Year'] = self.dfrar['Year'].apply(lambda x: int(x) - 1)
+        self.dfrar.index = self.dfrar.index + 1
+        print(self.dfrar)
+        self.dfrar = pd.concat([pd.DataFrame([[0,self.dfrar.loc[1]['Start']+10000, self.dfrar.loc[1]['Stop']+10000]],
+                               columns=self.dfrar.columns), self.dfrar], ignore_index=True)
+        print(self.dfrar)
+        #row.Start = int(row.Start) + 10000
+        #row.Stop  = int(row.Stop) + 10000
