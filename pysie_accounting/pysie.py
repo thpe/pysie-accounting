@@ -3,11 +3,11 @@ import re
 from datetime import datetime
 import pandas as pd
 
-def is_int(x):
+def is_int(val):
     """ returns true if value is int """
     success = True
     try:
-        int(x)
+        int(val)
     except ValueError:
         success = False
     return success
@@ -218,12 +218,12 @@ class PySIE:
         dfres = dfres.merge(right=dfm, on=['Konto'])
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
         self.dfres = dfres
-    def shift_year(self, df):
+    def shift_year(self, dfl):
         """ shfit the given dataframe by one year """
-        rest = df.loc[df['Year'] == '0'].copy(deep=True)
-        df['Year'] = df['Year'].apply(lambda x: int(x) - 1)
-        df = pd.concat([rest, df], ignore_index=True)
-        return df
+        rest = dfl.loc[dfl['Year'] == '0'].copy(deep=True)
+        dfl['Year'] = dfl['Year'].apply(lambda x: int(x) - 1)
+        dfl = pd.concat([rest, dfl], ignore_index=True)
+        return dfl
 
     def new_year(self):
         """ initialize a new year """
@@ -240,8 +240,9 @@ class PySIE:
         self.verifikat = {}
 
     def next_verifikat_number(self):
+        """ get the next free verifikat number """
         vnr = 0
-        for key,value in self.verifikat.items():
+        for key in self.verifikat:
             if int(key) > vnr:
                 vnr = int(key)
         vnr += 1
@@ -256,32 +257,35 @@ class PySIE:
         return not self.is_balance_account(kontonr)
 
     def update_account(self, kontonr, value):
+        """ update a account, switch right dataframe """
         if self.is_balance_account(kontonr):
             self.update_balance(kontonr, value)
         else:
             self.update_result(kontonr, value)
 
-    def reset(self, df, year = '0'):
-        df.loc[df['Year'] == year, 'Balance'] = 0
+    def reset(self, dfl, year = '0'):
+        """ reset all values for a year """
+        dfl.loc[dfl['Year'] == year, 'Balance'] = 0
 
-    def update(self, df, kontonr, value, year = '0'):
-        df.loc[(df['Year'] == year) &
-               (df['Konto'] == kontonr), 'Balance'] += value
+    def update(self, dfl, kontonr, value, year = '0'):
+        """ update a value """
+        dfl.loc[(dfl['Year'] == year) &
+               (dfl['Konto'] == kontonr), 'Balance'] += value
 
-    def get(self, df, kontonr, year = '0'):
-        return df.loc[(df['Year']== year) &
-                      (df['Konto'] == kontonr), 'Balance']
+    def get(self, dfl, kontonr, year = '0'):
+        """ get a value """
+        return dfl.loc[(dfl['Year']== year) &
+                       (dfl['Konto'] == kontonr), 'Balance']
+
     def update_balance(self, kontonr, value):
-        self.update(self.dfub, kontonr, value)
         """ add value to balance account with number kontonr """
-        return
+        self.update(self.dfub, kontonr, value)
 
     def update_result(self, kontonr, value):
-        self.update(self.dfres, kontonr, value)
         """ add value to result account with number kontonr """
-        return
+        self.update(self.dfres, kontonr, value)
 
-    def add_verifikat(self, text, trans, date, series='V'):
+    def add_verifikat(self, text, trans, date):
         """ add a verifikat """
         vnr = self.next_verifikat_number()
         self.verifikat[vnr] = (date, text, datetime.now().strftime("%Y%m%d"),
