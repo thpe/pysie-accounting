@@ -91,8 +91,6 @@ class PySIE:
         self.dftrans = pd.read_csv(filename, dtype={'SRU': int,
                                                     'Ink2': str})
         self.dftrans = self.dftrans[['SRU', 'Ink2']]
-        print('external matching')
-        print(self.dftrans)
 
     def open(self, filename):
         """ open and load SIE4 file """
@@ -207,26 +205,19 @@ class PySIE:
 #        dfub = dfub.convert_dtypes()
 #        dfres = dfres.convert_dtypes()
         dfm = dfm.set_index('Konto')
-        print('SIE matching')
-        print(dfm)
         self.sru = dfm.copy()
         # RAR
-        print(dfrar)
         self.dfrar = dfrar
 
         dfub = dfub.merge(right=dfm, on=['Konto'])
         dfub = dfub.merge(right=self.dftrans, on=['SRU'])
-        print(dfub)
         self.dfub = dfub
         dfib = dfib.merge(right=dfm, on=['Konto'])
         dfib = dfib.merge(right=self.dftrans, on=['SRU'])
-        print(dfib)
         self.dfib = dfib
         dfres = dfres.merge(right=dfm, on=['Konto'])
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
-        print(dfres)
         self.dfres = dfres
-        print(self.verifikat)
     def shift_year(self, df):
         """ shfit the given dataframe by one year """
         rest = df.loc[df['Year'] == '0'].copy(deep=True)
@@ -246,3 +237,56 @@ class PySIE:
         self.dfres = self.shift_year(self.dfres)
 
         self.verifikat = {}
+
+    def next_verifikat_number(self):
+        vnr = 0
+        for key,value in self.verifikat.items():
+            if int(key) > vnr:
+                vnr = int(key)
+        vnr += 1
+        return vnr
+
+    def is_balance_account(self, kontonr):
+        """ returns true if the kontonr is a balance account, balanskonto """
+        return kontonr < 3000
+
+    def is_result_account(self, kontonr):
+        """ returns true if the kontonr is a result account, resultkonto """
+        return not self.is_balance_account(kontonr)
+
+    def update_account(self, kontonr, value):
+        if self.is_balance_account(kontonr):
+            self.update_balance(kontonr, value)
+        else:
+            self.update_result(kontonr, value)
+
+    def update_balance(self, kontonr, value):
+        """ add value to balance account with number kontonr """
+        self.dfub.loc[(self.dfub['Year']== '0') & (self.dfub['Konto'] == kontonr), 'Balance'] += value
+        return
+
+    def update_result(self, kontonr, value):
+        """ add value to result account with number kontonr """
+        self.dfres.loc[(self.dfres['Year']== '0') & (self.dfres['Konto'] == kontonr), 'Balance'] += value
+        return
+
+    def add_verifikat(self, text, trans, date, series='V'):
+        """ add a verifikat """
+        vnr = self.next_verifikat_number()
+        self.verifikat[vnr] = (date, text, datetime.now().strftime("%Y%m%d"),
+                               trans)
+
+        for t in trans:
+            self.update_account(t[0], t[2])
+
+
+
+    def sum_result(self):
+        """ returns the sum of the result table """
+        return self.dfres['Balance'].sum()
+
+    def get_balance(self, kontonr, year = '0'):
+        """ returns the balance of a account for a year """
+        if self.is_balance_account(kontonr):
+            return self.dfub.loc[(self.dfub['Year']== year) & (self.dfub['Konto'] == kontonr), 'Balance']
+        return self.dfres.loc[(self.dfres['Year']== year) & (self.dfres['Konto'] == kontonr), 'Balance']
