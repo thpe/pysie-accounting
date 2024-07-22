@@ -243,8 +243,7 @@ class PySIE:
         """ get the next free verifikat number """
         vnr = 0
         for key in self.verifikat:
-            if int(key) > vnr:
-                vnr = int(key)
+            vnr = max(vnr, int(key))
         vnr += 1
         return vnr
 
