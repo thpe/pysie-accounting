@@ -235,6 +235,7 @@ class PySIE:
         self.dfub  = self.shift_year(self.dfub)
         self.dfib  = self.shift_year(self.dfib)
         self.dfres = self.shift_year(self.dfres)
+        self.reset(self.dfres)
 
         self.verifikat = {}
 
@@ -260,14 +261,24 @@ class PySIE:
         else:
             self.update_result(kontonr, value)
 
+    def reset(self, df, year = '0'):
+        df.loc[df['Year'] == year, 'Balance'] = 0
+
+    def update(self, df, kontonr, value, year = '0'):
+        df.loc[(df['Year'] == year) &
+               (df['Konto'] == kontonr), 'Balance'] += value
+
+    def get(self, df, kontonr, year = '0'):
+        return df.loc[(df['Year']== year) &
+                      (df['Konto'] == kontonr), 'Balance']
     def update_balance(self, kontonr, value):
+        self.update(self.dfub, kontonr, value)
         """ add value to balance account with number kontonr """
-        self.dfub.loc[(self.dfub['Year']== '0') & (self.dfub['Konto'] == kontonr), 'Balance'] += value
         return
 
     def update_result(self, kontonr, value):
+        self.update(self.dfres, kontonr, value)
         """ add value to result account with number kontonr """
-        self.dfres.loc[(self.dfres['Year']== '0') & (self.dfres['Konto'] == kontonr), 'Balance'] += value
         return
 
     def add_verifikat(self, text, trans, date, series='V'):
@@ -288,5 +299,5 @@ class PySIE:
     def get_balance(self, kontonr, year = '0'):
         """ returns the balance of a account for a year """
         if self.is_balance_account(kontonr):
-            return self.dfub.loc[(self.dfub['Year']== year) & (self.dfub['Konto'] == kontonr), 'Balance']
-        return self.dfres.loc[(self.dfres['Year']== year) & (self.dfres['Konto'] == kontonr), 'Balance']
+            return self.get(self.dfub, kontonr, year)
+        return self.get(self.dfres, kontonr, year)
