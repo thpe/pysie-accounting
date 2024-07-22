@@ -3,11 +3,11 @@ import re
 from datetime import datetime
 import pandas as pd
 
-def is_int(x):
+def is_int(val):
     """ returns true if value is int """
     success = True
     try:
-        int(x)
+        int(val)
     except ValueError:
         success = False
     return success
@@ -91,8 +91,6 @@ class PySIE:
         self.dftrans = pd.read_csv(filename, dtype={'SRU': int,
                                                     'Ink2': str})
         self.dftrans = self.dftrans[['SRU', 'Ink2']]
-        print('external matching')
-        print(self.dftrans)
 
     def open(self, filename):
         """ open and load SIE4 file """
@@ -207,32 +205,25 @@ class PySIE:
 #        dfub = dfub.convert_dtypes()
 #        dfres = dfres.convert_dtypes()
         dfm = dfm.set_index('Konto')
-        print('SIE matching')
-        print(dfm)
         self.sru = dfm.copy()
         # RAR
-        print(dfrar)
         self.dfrar = dfrar
 
         dfub = dfub.merge(right=dfm, on=['Konto'])
         dfub = dfub.merge(right=self.dftrans, on=['SRU'])
-        print(dfub)
         self.dfub = dfub
         dfib = dfib.merge(right=dfm, on=['Konto'])
         dfib = dfib.merge(right=self.dftrans, on=['SRU'])
-        print(dfib)
         self.dfib = dfib
         dfres = dfres.merge(right=dfm, on=['Konto'])
         dfres = dfres.merge(right=self.dftrans, on=['SRU'])
-        print(dfres)
         self.dfres = dfres
-        print(self.verifikat)
-    def shift_year(self, df):
+    def shift_year(self, dfl):
         """ shfit the given dataframe by one year """
-        rest = df.loc[df['Year'] == '0'].copy(deep=True)
-        df['Year'] = df['Year'].apply(lambda x: int(x) - 1)
-        df = pd.concat([rest, df], ignore_index=True)
-        return df
+        rest = dfl.loc[dfl['Year'] == '0'].copy(deep=True)
+        dfl['Year'] = dfl['Year'].apply(lambda x: int(x) - 1)
+        dfl = pd.concat([rest, dfl], ignore_index=True)
+        return dfl
 
     def new_year(self):
         """ initialize a new year """
@@ -244,5 +235,72 @@ class PySIE:
         self.dfub  = self.shift_year(self.dfub)
         self.dfib  = self.shift_year(self.dfib)
         self.dfres = self.shift_year(self.dfres)
+        self.reset(self.dfres)
 
         self.verifikat = {}
+
+    def next_verifikat_number(self):
+        """ get the next free verifikat number """
+        vnr = 0
+        for key in self.verifikat:
+            vnr = max(vnr, int(key))
+        vnr += 1
+        return vnr
+
+    def is_balance_account(self, kontonr):
+        """ returns true if the kontonr is a balance account, balanskonto """
+        return kontonr < 3000
+
+    def is_result_account(self, kontonr):
+        """ returns true if the kontonr is a result account, resultkonto """
+        return not self.is_balance_account(kontonr)
+
+    def update_account(self, kontonr, value):
+        """ update a account, switch right dataframe """
+        if self.is_balance_account(kontonr):
+            self.update_balance(kontonr, value)
+        else:
+            self.update_result(kontonr, value)
+
+    def reset(self, dfl, year = '0'):
+        """ reset all values for a year """
+        dfl.loc[dfl['Year'] == year, 'Balance'] = 0
+
+    def update(self, dfl, kontonr, value, year = '0'):
+        """ update a value """
+        dfl.loc[(dfl['Year'] == year) &
+               (dfl['Konto'] == kontonr), 'Balance'] += value
+
+    def get(self, dfl, kontonr, year = '0'):
+        """ get a value """
+        return dfl.loc[(dfl['Year']== year) &
+                       (dfl['Konto'] == kontonr), 'Balance']
+
+    def update_balance(self, kontonr, value):
+        """ add value to balance account with number kontonr """
+        self.update(self.dfub, kontonr, value)
+
+    def update_result(self, kontonr, value):
+        """ add value to result account with number kontonr """
+        self.update(self.dfres, kontonr, value)
+
+    def add_verifikat(self, text, trans, date):
+        """ add a verifikat """
+        vnr = self.next_verifikat_number()
+        self.verifikat[vnr] = (date, text, datetime.now().strftime("%Y%m%d"),
+                               trans)
+
+        for t in trans:
+            self.update_account(t[0], t[2])
+
+
+
+    def sum_result(self, year = '0'):
+        """ returns the sum of the result table """
+        return self.dfres.loc[self.dfres['Year'] == year, 'Balance'].sum()
+
+    def get_balance(self, kontonr, year = '0'):
+        """ returns the balance of a account for a year """
+        if self.is_balance_account(kontonr):
+            return self.get(self.dfub, kontonr, year)
+        return self.get(self.dfres, kontonr, year)
