@@ -273,8 +273,8 @@ class PySIE:
 
     def get(self, dfl, kontonr, year = '0'):
         """ get a value """
-        return dfl.loc[(dfl['Year']== year) &
-                       (dfl['Konto'] == kontonr), 'Balance']
+        return dfl[(dfl['Year']== year) &
+                       (dfl['Konto'] == kontonr)]['Balance'].iloc[-1]
 
     def update_balance(self, kontonr, value):
         """ add value to balance account with number kontonr """
