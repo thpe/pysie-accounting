@@ -292,9 +292,9 @@ class PySIE:
 
 
 
-    def sum_result(self):
+    def sum_result(self, year = '0'):
         """ returns the sum of the result table """
-        return self.dfres['Balance'].sum()
+        return self.dfres.loc[self.dfres['Year'] == year, 'Balance'].sum()
 
     def get_balance(self, kontonr, year = '0'):
         """ returns the balance of a account for a year """
