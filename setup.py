@@ -6,7 +6,7 @@ with open("README.md", "r", encoding='utf8') as fh:
 
 setuptools.setup(
     name="pysie_accounting",
-    version="0.0.1",
+    version="0.0.2",
     author="Thomas Petig",
     author_email="thomas@petig.eu",
     description="SIE file decoder",
